@@ -1,0 +1,6 @@
+C:\Users\gerti\Desktop\Probability\MonteCarlo_Simulation_Project\MonteCarlo_Simulation_Project\bin\Debug\MonteCarlo_Simulation_Project.exe.config
+C:\Users\gerti\Desktop\Probability\MonteCarlo_Simulation_Project\MonteCarlo_Simulation_Project\bin\Debug\MonteCarlo_Simulation_Project.exe
+C:\Users\gerti\Desktop\Probability\MonteCarlo_Simulation_Project\MonteCarlo_Simulation_Project\bin\Debug\MonteCarlo_Simulation_Project.pdb
+C:\Users\gerti\Desktop\Probability\MonteCarlo_Simulation_Project\MonteCarlo_Simulation_Project\obj\Debug\MonteCarlo_Simulation_Project.csprojResolveAssemblyReference.cache
+C:\Users\gerti\Desktop\Probability\MonteCarlo_Simulation_Project\MonteCarlo_Simulation_Project\obj\Debug\MonteCarlo_Simulation_Project.exe
+C:\Users\gerti\Desktop\Probability\MonteCarlo_Simulation_Project\MonteCarlo_Simulation_Project\obj\Debug\MonteCarlo_Simulation_Project.pdb
