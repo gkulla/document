@@ -1,0 +1,197 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+add_sub
+# storage
+db|add_sub.(0).cnf
+db|add_sub.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+add_sub.vhd
+cd207dbc13e69cfbe39e33159d1d8882
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder0
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder1
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder2
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder3
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder0
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder1
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder2
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder3
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Csc21100_4bit_add_sub
+# storage
+db|add_sub.(2).cnf
+db|add_sub.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csc21100_4bit_add_sub.vhd
+d655bbaaf98ed5df1042a3a1f76ac5d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(b)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sum)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Display
+# storage
+db|add_sub.(3).cnf
+db|add_sub.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+display.vhd
+1dd3bdc19748ef9bbb9afcb610588e70
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Display:inst1
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Csc21100_8bit_add_sub
+# storage
+db|add_sub.(1).cnf
+db|add_sub.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csc21100_8bit_add_sub.vhd
+596744ab6b5a6cc9b7b23d5dcd2cf63b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Csc21100_8bit_add_sub:inst
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Block1
+# storage
+db|add_sub.(4).cnf
+db|add_sub.(4).cnf
+# case_insensitive
+# source_file
+block1.bdf
+4e3044b9e596b8d752dc25788d306ff7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

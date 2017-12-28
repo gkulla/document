@@ -1,0 +1,584 @@
+|Block2
+CLA[0] <= RCA8_bit:inst1.sum[0]
+CLA[1] <= RCA8_bit:inst1.sum[1]
+CLA[2] <= RCA8_bit:inst1.sum[2]
+CLA[3] <= RCA8_bit:inst1.sum[3]
+CLA[4] <= RCA8_bit:inst1.sum[4]
+CLA[5] <= RCA8_bit:inst1.sum[5]
+CLA[6] <= RCA8_bit:inst1.sum[6]
+CLA[7] <= RCA8_bit:inst1.sum[7]
+a[0] => RCA8_bit:inst1.a[0]
+a[0] => My_LPM_Adder:inst2.dataa[0]
+a[0] => Csc21100_8bit_add_sub:inst.a[0]
+a[1] => RCA8_bit:inst1.a[1]
+a[1] => My_LPM_Adder:inst2.dataa[1]
+a[1] => Csc21100_8bit_add_sub:inst.a[1]
+a[2] => RCA8_bit:inst1.a[2]
+a[2] => My_LPM_Adder:inst2.dataa[2]
+a[2] => Csc21100_8bit_add_sub:inst.a[2]
+a[3] => RCA8_bit:inst1.a[3]
+a[3] => My_LPM_Adder:inst2.dataa[3]
+a[3] => Csc21100_8bit_add_sub:inst.a[3]
+a[4] => RCA8_bit:inst1.a[4]
+a[4] => My_LPM_Adder:inst2.dataa[4]
+a[4] => Csc21100_8bit_add_sub:inst.a[4]
+a[5] => RCA8_bit:inst1.a[5]
+a[5] => My_LPM_Adder:inst2.dataa[5]
+a[5] => Csc21100_8bit_add_sub:inst.a[5]
+a[6] => RCA8_bit:inst1.a[6]
+a[6] => My_LPM_Adder:inst2.dataa[6]
+a[6] => Csc21100_8bit_add_sub:inst.a[6]
+a[7] => RCA8_bit:inst1.a[7]
+a[7] => My_LPM_Adder:inst2.dataa[7]
+a[7] => Csc21100_8bit_add_sub:inst.a[7]
+b[0] => RCA8_bit:inst1.b[0]
+b[0] => My_LPM_Adder:inst2.datab[0]
+b[0] => Csc21100_8bit_add_sub:inst.b[0]
+b[1] => RCA8_bit:inst1.b[1]
+b[1] => My_LPM_Adder:inst2.datab[1]
+b[1] => Csc21100_8bit_add_sub:inst.b[1]
+b[2] => RCA8_bit:inst1.b[2]
+b[2] => My_LPM_Adder:inst2.datab[2]
+b[2] => Csc21100_8bit_add_sub:inst.b[2]
+b[3] => RCA8_bit:inst1.b[3]
+b[3] => My_LPM_Adder:inst2.datab[3]
+b[3] => Csc21100_8bit_add_sub:inst.b[3]
+b[4] => RCA8_bit:inst1.b[4]
+b[4] => My_LPM_Adder:inst2.datab[4]
+b[4] => Csc21100_8bit_add_sub:inst.b[4]
+b[5] => RCA8_bit:inst1.b[5]
+b[5] => My_LPM_Adder:inst2.datab[5]
+b[5] => Csc21100_8bit_add_sub:inst.b[5]
+b[6] => RCA8_bit:inst1.b[6]
+b[6] => My_LPM_Adder:inst2.datab[6]
+b[6] => Csc21100_8bit_add_sub:inst.b[6]
+b[7] => RCA8_bit:inst1.b[7]
+b[7] => My_LPM_Adder:inst2.datab[7]
+b[7] => Csc21100_8bit_add_sub:inst.b[7]
+lpm[0] <= My_LPM_Adder:inst2.result[0]
+lpm[1] <= My_LPM_Adder:inst2.result[1]
+lpm[2] <= My_LPM_Adder:inst2.result[2]
+lpm[3] <= My_LPM_Adder:inst2.result[3]
+lpm[4] <= My_LPM_Adder:inst2.result[4]
+lpm[5] <= My_LPM_Adder:inst2.result[5]
+lpm[6] <= My_LPM_Adder:inst2.result[6]
+lpm[7] <= My_LPM_Adder:inst2.result[7]
+RCA[0] <= Csc21100_8bit_add_sub:inst.sum[0]
+RCA[1] <= Csc21100_8bit_add_sub:inst.sum[1]
+RCA[2] <= Csc21100_8bit_add_sub:inst.sum[2]
+RCA[3] <= Csc21100_8bit_add_sub:inst.sum[3]
+RCA[4] <= Csc21100_8bit_add_sub:inst.sum[4]
+RCA[5] <= Csc21100_8bit_add_sub:inst.sum[5]
+RCA[6] <= Csc21100_8bit_add_sub:inst.sum[6]
+RCA[7] <= Csc21100_8bit_add_sub:inst.sum[7]
+
+
+|Block2|RCA8_bit:inst1
+a[0] => full_adder_g_p:ADD80.a
+a[1] => full_adder_g_p:ADD81.a
+a[2] => full_adder_g_p:ADD82.a
+a[3] => full_adder_g_p:ADD83.a
+a[4] => full_adder_g_p:ADD84.a
+a[5] => full_adder_g_p:ADD85.a
+a[6] => full_adder_g_p:ADD86.a
+a[7] => full_adder_g_p:ADD87.a
+b[0] => sig_b[0].DATAB
+b[0] => sig_b[0].DATAA
+b[1] => sig_b[1].DATAB
+b[1] => sig_b[1].DATAA
+b[2] => sig_b[2].DATAB
+b[2] => sig_b[2].DATAA
+b[3] => sig_b[3].DATAB
+b[3] => sig_b[3].DATAA
+b[4] => sig_b[4].DATAB
+b[4] => sig_b[4].DATAA
+b[5] => sig_b[5].DATAB
+b[5] => sig_b[5].DATAA
+b[6] => sig_b[6].DATAB
+b[6] => sig_b[6].DATAA
+b[7] => sig_b[7].DATAB
+b[7] => sig_b[7].DATAA
+carryin => cla_logic:CLA0.CIN
+carryin => full_adder_g_p:ADD80.cin
+carryin => sig_b[7].OUTPUTSELECT
+carryin => sig_b[6].OUTPUTSELECT
+carryin => sig_b[5].OUTPUTSELECT
+carryin => sig_b[4].OUTPUTSELECT
+carryin => sig_b[3].OUTPUTSELECT
+carryin => sig_b[2].OUTPUTSELECT
+carryin => sig_b[1].OUTPUTSELECT
+carryin => sig_b[0].OUTPUTSELECT
+sum[0] <= full_adder_g_p:ADD80.sum
+sum[1] <= full_adder_g_p:ADD81.sum
+sum[2] <= full_adder_g_p:ADD82.sum
+sum[3] <= full_adder_g_p:ADD83.sum
+sum[4] <= full_adder_g_p:ADD84.sum
+sum[5] <= full_adder_g_p:ADD85.sum
+sum[6] <= full_adder_g_p:ADD86.sum
+sum[7] <= full_adder_g_p:ADD87.sum
+cgout <= cla_logic:CLA0.CGOUT
+cpout <= cla_logic:CLA0.CPOUT
+overflow <= overflow~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|RCA8_bit:inst1|full_adder_g_p:ADD80
+a => sum~0.IN0
+a => p~0.IN0
+a => g~0.IN0
+b => sum~0.IN1
+b => p~0.IN1
+b => g~0.IN1
+cin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|RCA8_bit:inst1|full_adder_g_p:ADD81
+a => sum~0.IN0
+a => p~0.IN0
+a => g~0.IN0
+b => sum~0.IN1
+b => p~0.IN1
+b => g~0.IN1
+cin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|RCA8_bit:inst1|full_adder_g_p:ADD82
+a => sum~0.IN0
+a => p~0.IN0
+a => g~0.IN0
+b => sum~0.IN1
+b => p~0.IN1
+b => g~0.IN1
+cin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|RCA8_bit:inst1|full_adder_g_p:ADD83
+a => sum~0.IN0
+a => p~0.IN0
+a => g~0.IN0
+b => sum~0.IN1
+b => p~0.IN1
+b => g~0.IN1
+cin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|RCA8_bit:inst1|full_adder_g_p:ADD84
+a => sum~0.IN0
+a => p~0.IN0
+a => g~0.IN0
+b => sum~0.IN1
+b => p~0.IN1
+b => g~0.IN1
+cin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|RCA8_bit:inst1|full_adder_g_p:ADD85
+a => sum~0.IN0
+a => p~0.IN0
+a => g~0.IN0
+b => sum~0.IN1
+b => p~0.IN1
+b => g~0.IN1
+cin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|RCA8_bit:inst1|full_adder_g_p:ADD86
+a => sum~0.IN0
+a => p~0.IN0
+a => g~0.IN0
+b => sum~0.IN1
+b => p~0.IN1
+b => g~0.IN1
+cin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|RCA8_bit:inst1|full_adder_g_p:ADD87
+a => sum~0.IN0
+a => p~0.IN0
+a => g~0.IN0
+b => sum~0.IN1
+b => p~0.IN1
+b => g~0.IN1
+cin => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|RCA8_bit:inst1|cla_logic:CLA0
+G[0] => C~0.IN1
+G[0] => C~43.IN0
+G[1] => C~1.IN1
+G[1] => C~37.IN0
+G[2] => C~3.IN1
+G[2] => C~32.IN0
+G[3] => C~6.IN1
+G[3] => C~28.IN0
+G[4] => C~10.IN1
+G[4] => C~25.IN0
+G[5] => C~16.IN1
+G[5] => C~23.IN0
+G[6] => C~24.IN1
+G[7] => ~NO_FANOUT~
+P[0] => C~50.IN0
+P[0] => CPOUT~6.IN1
+P[1] => C~43.IN1
+P[1] => C~51.IN1
+P[1] => CPOUT~5.IN1
+P[2] => C~11.IN1
+P[2] => C~37.IN1
+P[2] => C~44.IN1
+P[2] => C~52.IN1
+P[2] => CPOUT~4.IN1
+P[3] => C~17.IN1
+P[3] => C~32.IN1
+P[3] => C~38.IN1
+P[3] => C~45.IN1
+P[3] => C~53.IN1
+P[3] => CPOUT~3.IN1
+P[4] => C~26.IN1
+P[4] => C~28.IN1
+P[4] => C~33.IN1
+P[4] => C~39.IN1
+P[4] => C~46.IN1
+P[4] => C~54.IN1
+P[4] => CPOUT~2.IN1
+P[5] => C~25.IN1
+P[5] => C~29.IN1
+P[5] => C~34.IN1
+P[5] => C~40.IN1
+P[5] => C~47.IN1
+P[5] => C~55.IN1
+P[5] => CPOUT~1.IN1
+P[6] => C~23.IN1
+P[6] => C~30.IN1
+P[6] => C~35.IN1
+P[6] => C~41.IN1
+P[6] => C~48.IN1
+P[6] => C~56.IN1
+P[6] => CPOUT~0.IN0
+P[7] => CPOUT~0.IN1
+CIN => C~50.IN1
+C[0] <= <GND>
+C[1] <= C~0.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= C~2.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= C~5.DB_MAX_OUTPUT_PORT_TYPE
+C[4] <= C~9.DB_MAX_OUTPUT_PORT_TYPE
+C[5] <= C~15.DB_MAX_OUTPUT_PORT_TYPE
+C[6] <= C~22.DB_MAX_OUTPUT_PORT_TYPE
+C[7] <= C~57.DB_MAX_OUTPUT_PORT_TYPE
+CGOUT <= CGOUT~0.DB_MAX_OUTPUT_PORT_TYPE
+CPOUT <= CPOUT~6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|My_LPM_Adder:inst2
+add_sub => lpm_add_sub:lpm_add_sub_component.add_sub
+cin => lpm_add_sub:lpm_add_sub_component.cin
+dataa[0] => lpm_add_sub:lpm_add_sub_component.dataa[0]
+dataa[1] => lpm_add_sub:lpm_add_sub_component.dataa[1]
+dataa[2] => lpm_add_sub:lpm_add_sub_component.dataa[2]
+dataa[3] => lpm_add_sub:lpm_add_sub_component.dataa[3]
+dataa[4] => lpm_add_sub:lpm_add_sub_component.dataa[4]
+dataa[5] => lpm_add_sub:lpm_add_sub_component.dataa[5]
+dataa[6] => lpm_add_sub:lpm_add_sub_component.dataa[6]
+dataa[7] => lpm_add_sub:lpm_add_sub_component.dataa[7]
+datab[0] => lpm_add_sub:lpm_add_sub_component.datab[0]
+datab[1] => lpm_add_sub:lpm_add_sub_component.datab[1]
+datab[2] => lpm_add_sub:lpm_add_sub_component.datab[2]
+datab[3] => lpm_add_sub:lpm_add_sub_component.datab[3]
+datab[4] => lpm_add_sub:lpm_add_sub_component.datab[4]
+datab[5] => lpm_add_sub:lpm_add_sub_component.datab[5]
+datab[6] => lpm_add_sub:lpm_add_sub_component.datab[6]
+datab[7] => lpm_add_sub:lpm_add_sub_component.datab[7]
+cout <= lpm_add_sub:lpm_add_sub_component.cout
+overflow <= lpm_add_sub:lpm_add_sub_component.overflow
+result[0] <= lpm_add_sub:lpm_add_sub_component.result[0]
+result[1] <= lpm_add_sub:lpm_add_sub_component.result[1]
+result[2] <= lpm_add_sub:lpm_add_sub_component.result[2]
+result[3] <= lpm_add_sub:lpm_add_sub_component.result[3]
+result[4] <= lpm_add_sub:lpm_add_sub_component.result[4]
+result[5] <= lpm_add_sub:lpm_add_sub_component.result[5]
+result[6] <= lpm_add_sub:lpm_add_sub_component.result[6]
+result[7] <= lpm_add_sub:lpm_add_sub_component.result[7]
+
+
+|Block2|My_LPM_Adder:inst2|lpm_add_sub:lpm_add_sub_component
+dataa[0] => add_sub_k8i:auto_generated.dataa[0]
+dataa[1] => add_sub_k8i:auto_generated.dataa[1]
+dataa[2] => add_sub_k8i:auto_generated.dataa[2]
+dataa[3] => add_sub_k8i:auto_generated.dataa[3]
+dataa[4] => add_sub_k8i:auto_generated.dataa[4]
+dataa[5] => add_sub_k8i:auto_generated.dataa[5]
+dataa[6] => add_sub_k8i:auto_generated.dataa[6]
+dataa[7] => add_sub_k8i:auto_generated.dataa[7]
+datab[0] => add_sub_k8i:auto_generated.datab[0]
+datab[1] => add_sub_k8i:auto_generated.datab[1]
+datab[2] => add_sub_k8i:auto_generated.datab[2]
+datab[3] => add_sub_k8i:auto_generated.datab[3]
+datab[4] => add_sub_k8i:auto_generated.datab[4]
+datab[5] => add_sub_k8i:auto_generated.datab[5]
+datab[6] => add_sub_k8i:auto_generated.datab[6]
+datab[7] => add_sub_k8i:auto_generated.datab[7]
+cin => add_sub_k8i:auto_generated.cin
+add_sub => add_sub_k8i:auto_generated.add_sub
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= add_sub_k8i:auto_generated.result[0]
+result[1] <= add_sub_k8i:auto_generated.result[1]
+result[2] <= add_sub_k8i:auto_generated.result[2]
+result[3] <= add_sub_k8i:auto_generated.result[3]
+result[4] <= add_sub_k8i:auto_generated.result[4]
+result[5] <= add_sub_k8i:auto_generated.result[5]
+result[6] <= add_sub_k8i:auto_generated.result[6]
+result[7] <= add_sub_k8i:auto_generated.result[7]
+cout <= add_sub_k8i:auto_generated.cout
+overflow <= add_sub_k8i:auto_generated.overflow
+
+
+|Block2|My_LPM_Adder:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_k8i:auto_generated
+add_sub => _~1.IN0
+add_sub => overflow~0.IN0
+cin => op_1.IN18
+cin => op_1.IN19
+cout <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => op_1.IN16
+dataa[1] => op_1.IN14
+dataa[2] => op_1.IN12
+dataa[3] => op_1.IN10
+dataa[4] => op_1.IN8
+dataa[5] => op_1.IN6
+dataa[6] => op_1.IN4
+dataa[7] => op_1.IN2
+datab[0] => _~9.IN1
+datab[1] => _~8.IN1
+datab[2] => _~7.IN1
+datab[3] => _~6.IN1
+datab[4] => _~5.IN1
+datab[5] => _~4.IN1
+datab[6] => _~3.IN1
+datab[7] => _~2.IN1
+overflow <= overflow~0.DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Csc21100_8bit_add_sub:inst
+a[0] => Csc21100_4bit_add_sub:Csc_Bit_Adder0.a[0]
+a[1] => Csc21100_4bit_add_sub:Csc_Bit_Adder0.a[1]
+a[2] => Csc21100_4bit_add_sub:Csc_Bit_Adder0.a[2]
+a[3] => Csc21100_4bit_add_sub:Csc_Bit_Adder0.a[3]
+a[4] => Csc21100_4bit_add_sub:Csc_Bit_Adder1.a[0]
+a[5] => Csc21100_4bit_add_sub:Csc_Bit_Adder1.a[1]
+a[6] => Csc21100_4bit_add_sub:Csc_Bit_Adder1.a[2]
+a[7] => Csc21100_4bit_add_sub:Csc_Bit_Adder1.a[3]
+b[0] => Csc21100_4bit_add_sub:Csc_Bit_Adder0.b[0]
+b[1] => Csc21100_4bit_add_sub:Csc_Bit_Adder0.b[1]
+b[2] => Csc21100_4bit_add_sub:Csc_Bit_Adder0.b[2]
+b[3] => Csc21100_4bit_add_sub:Csc_Bit_Adder0.b[3]
+b[4] => Csc21100_4bit_add_sub:Csc_Bit_Adder1.b[0]
+b[5] => Csc21100_4bit_add_sub:Csc_Bit_Adder1.b[1]
+b[6] => Csc21100_4bit_add_sub:Csc_Bit_Adder1.b[2]
+b[7] => Csc21100_4bit_add_sub:Csc_Bit_Adder1.b[3]
+cin => Csc21100_4bit_add_sub:Csc_Bit_Adder0.cin
+sum[0] <= Csc21100_4bit_add_sub:Csc_Bit_Adder0.sum[0]
+sum[1] <= Csc21100_4bit_add_sub:Csc_Bit_Adder0.sum[1]
+sum[2] <= Csc21100_4bit_add_sub:Csc_Bit_Adder0.sum[2]
+sum[3] <= Csc21100_4bit_add_sub:Csc_Bit_Adder0.sum[3]
+sum[4] <= Csc21100_4bit_add_sub:Csc_Bit_Adder1.sum[0]
+sum[5] <= Csc21100_4bit_add_sub:Csc_Bit_Adder1.sum[1]
+sum[6] <= Csc21100_4bit_add_sub:Csc_Bit_Adder1.sum[2]
+sum[7] <= Csc21100_4bit_add_sub:Csc_Bit_Adder1.sum[3]
+overflow <= Csc21100_4bit_add_sub:Csc_Bit_Adder1.overflow
+
+
+|Block2|Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0
+a[0] => add_sub:Csc_Bit_Adder0.a
+a[1] => add_sub:Csc_Bit_Adder1.a
+a[2] => add_sub:Csc_Bit_Adder2.a
+a[3] => add_sub:Csc_Bit_Adder3.a
+b[0] => temp[0].DATAA
+b[0] => temp[0].DATAB
+b[1] => temp[1].DATAA
+b[1] => temp[1].DATAB
+b[2] => temp[2].DATAA
+b[2] => temp[2].DATAB
+b[3] => temp[3].DATAA
+b[3] => temp[3].DATAB
+cin => temp[3].OUTPUTSELECT
+cin => temp[2].OUTPUTSELECT
+cin => temp[1].OUTPUTSELECT
+cin => temp[0].OUTPUTSELECT
+cin => add_sub:Csc_Bit_Adder0.cin
+sum[0] <= add_sub:Csc_Bit_Adder0.sum
+sum[1] <= add_sub:Csc_Bit_Adder1.sum
+sum[2] <= add_sub:Csc_Bit_Adder2.sum
+sum[3] <= add_sub:Csc_Bit_Adder3.sum
+cout <= add_sub:Csc_Bit_Adder3.cout
+overflow <= overflow~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder0
+a => sum~0.IN0
+a => cout~0.IN0
+a => cout~3.IN0
+b => sum~0.IN1
+b => cout~1.IN0
+b => cout~3.IN1
+cin => sum~1.IN1
+cin => cout~0.IN1
+cin => cout~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder1
+a => sum~0.IN0
+a => cout~0.IN0
+a => cout~3.IN0
+b => sum~0.IN1
+b => cout~1.IN0
+b => cout~3.IN1
+cin => sum~1.IN1
+cin => cout~0.IN1
+cin => cout~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder2
+a => sum~0.IN0
+a => cout~0.IN0
+a => cout~3.IN0
+b => sum~0.IN1
+b => cout~1.IN0
+b => cout~3.IN1
+cin => sum~1.IN1
+cin => cout~0.IN1
+cin => cout~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder3
+a => sum~0.IN0
+a => cout~0.IN0
+a => cout~3.IN0
+b => sum~0.IN1
+b => cout~1.IN0
+b => cout~3.IN1
+cin => sum~1.IN1
+cin => cout~0.IN1
+cin => cout~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1
+a[0] => add_sub:Csc_Bit_Adder0.a
+a[1] => add_sub:Csc_Bit_Adder1.a
+a[2] => add_sub:Csc_Bit_Adder2.a
+a[3] => add_sub:Csc_Bit_Adder3.a
+b[0] => temp[0].DATAA
+b[0] => temp[0].DATAB
+b[1] => temp[1].DATAA
+b[1] => temp[1].DATAB
+b[2] => temp[2].DATAA
+b[2] => temp[2].DATAB
+b[3] => temp[3].DATAA
+b[3] => temp[3].DATAB
+cin => temp[3].OUTPUTSELECT
+cin => temp[2].OUTPUTSELECT
+cin => temp[1].OUTPUTSELECT
+cin => temp[0].OUTPUTSELECT
+cin => add_sub:Csc_Bit_Adder0.cin
+sum[0] <= add_sub:Csc_Bit_Adder0.sum
+sum[1] <= add_sub:Csc_Bit_Adder1.sum
+sum[2] <= add_sub:Csc_Bit_Adder2.sum
+sum[3] <= add_sub:Csc_Bit_Adder3.sum
+cout <= add_sub:Csc_Bit_Adder3.cout
+overflow <= overflow~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder0
+a => sum~0.IN0
+a => cout~0.IN0
+a => cout~3.IN0
+b => sum~0.IN1
+b => cout~1.IN0
+b => cout~3.IN1
+cin => sum~1.IN1
+cin => cout~0.IN1
+cin => cout~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder1
+a => sum~0.IN0
+a => cout~0.IN0
+a => cout~3.IN0
+b => sum~0.IN1
+b => cout~1.IN0
+b => cout~3.IN1
+cin => sum~1.IN1
+cin => cout~0.IN1
+cin => cout~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder2
+a => sum~0.IN0
+a => cout~0.IN0
+a => cout~3.IN0
+b => sum~0.IN1
+b => cout~1.IN0
+b => cout~3.IN1
+cin => sum~1.IN1
+cin => cout~0.IN1
+cin => cout~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder3
+a => sum~0.IN0
+a => cout~0.IN0
+a => cout~3.IN0
+b => sum~0.IN1
+b => cout~1.IN0
+b => cout~3.IN1
+cin => sum~1.IN1
+cin => cout~0.IN1
+cin => cout~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,14 @@
+to, location
+D, PIN_N25
+A, PIN_V2
+
+Clk, PIN_G26
+
+output[0], PIN_AE23
+output[1], PIN_AF23
+output[2], PIN_AB21
+output[3], PIN_AC22
+output[4], PIN_AD22
+output[5], PIN_AD23
+output[6], PIN_AD21
+output[7], PIN_AC21

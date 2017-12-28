@@ -1,0 +1,120 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Block1
+# storage
+db|decoder_enable_three_eight.(2).cnf
+db|decoder_enable_three_eight.(2).cnf
+# case_insensitive
+# source_file
+block1.bdf
+8b43bb7a80a6a9f6baa133b79e3cdccd
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+decoder_enable_three_eight
+# storage
+db|decoder_enable_three_eight.(0).cnf
+db|decoder_enable_three_eight.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decoder_enable_three_eight.vhd
+5d447fd531bb869ebf9c21c8095a4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+decoder_enable_three_eight:inst
+}
+# lmf
+|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+decoder_enable
+# storage
+db|decoder_enable_three_eight.(1).cnf
+db|decoder_enable_three_eight.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decoder_enable_three_eight.vhd
+5d447fd531bb869ebf9c21c8095a4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(f)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+decoder_enable_three_eight:inst|decoder_enable:decoder0
+decoder_enable_three_eight:inst|decoder_enable:decoder1
+}
+# lmf
+|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

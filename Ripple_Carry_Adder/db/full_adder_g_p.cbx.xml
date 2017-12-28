@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="full_adder_g_p">
+		<CBX_INST_ENTRY INSTANCE_NAME="|LPM_Block1|MY_LPM:inst2|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_g8i.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

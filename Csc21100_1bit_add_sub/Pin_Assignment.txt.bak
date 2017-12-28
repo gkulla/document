@@ -1,0 +1,7 @@
+to, location
+a, PIN_N25
+b, PIN_N26
+cin,  PIN_AF14
+
+sum, PIN_AE23
+cout, PIN_AB21

@@ -1,0 +1,17 @@
+library IEEE;
+USE IEEE.std_logic_1164.all;
+
+
+ENTITY FullAdder IS
+port ( A, B, CIN: in std_logic;
+       sum, cout: out std_logic
+      );
+END FullAdder;
+
+Architecture Struct OF FullAdder IS
+Begin
+--F0 = A B C + A' B' C + A' B C' + A B' C';
+--F1 = A B  + A C + B C;
+sum  <= (A and B and C)or(not A and not B and C)or(not A and B and not C)or(A and not B and not C);
+cout <= (A and B)or(A and C)or(B and C);
+END Struct;

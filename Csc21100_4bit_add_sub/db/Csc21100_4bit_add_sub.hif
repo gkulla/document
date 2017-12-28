@@ -1,0 +1,192 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Block
+# storage
+db|Csc21100_4bit_add_sub.(2).cnf
+db|Csc21100_4bit_add_sub.(2).cnf
+# case_insensitive
+# source_file
+block.bdf
+d64e718fed3e5c4668a8cff21365e7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Csc21100_4bit_add_sub
+# storage
+db|Csc21100_4bit_add_sub.(0).cnf
+db|Csc21100_4bit_add_sub.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csc21100_4bit_add_sub.vhd
+11577ee022e7fbcaa5d0ff9b3c5979c9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Csc21100_4bit_add_sub:inst2
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Csc21100_1bit_add_sub
+# storage
+db|Csc21100_4bit_add_sub.(1).cnf
+db|Csc21100_4bit_add_sub.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csc21100_4bit_add_sub.vhd
+11577ee022e7fbcaa5d0ff9b3c5979c9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder0
+Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder1
+Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder2
+Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder3
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Seg_Display
+# storage
+db|Csc21100_4bit_add_sub.(3).cnf
+db|Csc21100_4bit_add_sub.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+seg_display.vhd
+41476e88372be28b1074175569bca64
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Seg_Display_Signed
+# storage
+db|Csc21100_4bit_add_sub.(5).cnf
+db|Csc21100_4bit_add_sub.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+seg_display_signed.vhd
+e39b675c98da28c7514e3775d4146318
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Seg_Display_Signed:inst
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+BlockDisplay
+# storage
+db|Csc21100_4bit_add_sub.(4).cnf
+db|Csc21100_4bit_add_sub.(4).cnf
+# case_insensitive
+# source_file
+blockdisplay.bdf
+88b2c1241a702d6a42c4b2f556f88b6f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

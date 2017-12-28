@@ -1,0 +1,158 @@
+|Block_4_bit_add_sub_symbol
+sum0 <= Block_4_bit_add_sub:inst.sum0
+a0 => Block_4_bit_add_sub:inst.a0
+b0 => Block_4_bit_add_sub:inst.b0
+cin => Block_4_bit_add_sub:inst.cin
+a1 => Block_4_bit_add_sub:inst.a1
+b1 => Block_4_bit_add_sub:inst.b1
+a2 => Block_4_bit_add_sub:inst.a2
+b2 => Block_4_bit_add_sub:inst.b2
+a3 => Block_4_bit_add_sub:inst.a3
+b3 => Block_4_bit_add_sub:inst.b3
+sum1 <= Block_4_bit_add_sub:inst.sum1
+sum2 <= Block_4_bit_add_sub:inst.sum2
+cout <= Block_4_bit_add_sub:inst.cout
+sum3 <= Block_4_bit_add_sub:inst.sum3
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst
+sum0 <= Block_logic_2_half_adder:inst.sum
+a0 => Block_logic_2_half_adder:inst.a
+b0 => inst4.IN0
+cin => inst4.IN1
+cin => Block_logic_2_half_adder:inst.cin
+cin => inst5.IN1
+cin => inst6.IN1
+cin => inst7.IN1
+sum1 <= Block_logic_2_half_adder:inst1.sum
+a1 => Block_logic_2_half_adder:inst1.a
+b1 => inst5.IN0
+sum2 <= Block_logic_2_half_adder:inst2.sum
+a2 => Block_logic_2_half_adder:inst2.a
+b2 => inst6.IN0
+sum3 <= Block_logic_2_half_adder:inst3.sum
+a3 => Block_logic_2_half_adder:inst3.a
+b3 => inst7.IN0
+cout <= Block_logic_2_half_adder:inst3.cout
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+b => Block_logic_gates:inst.a
+cin => Block_logic_gates:inst.b
+a => Block_logic_gates:inst1.a
+sum <= Block_logic_gates:inst1.sum
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst|Block_logic_gates:inst
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst2.IN0
+a => inst4.IN0
+a => inst6.IN0
+b => inst5.IN0
+b => inst.IN1
+b => inst6.IN1
+cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst|Block_logic_gates:inst1
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst2.IN0
+a => inst4.IN0
+a => inst6.IN0
+b => inst5.IN0
+b => inst.IN1
+b => inst6.IN1
+cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst1
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+b => Block_logic_gates:inst.a
+cin => Block_logic_gates:inst.b
+a => Block_logic_gates:inst1.a
+sum <= Block_logic_gates:inst1.sum
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst1|Block_logic_gates:inst
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst2.IN0
+a => inst4.IN0
+a => inst6.IN0
+b => inst5.IN0
+b => inst.IN1
+b => inst6.IN1
+cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst1|Block_logic_gates:inst1
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst2.IN0
+a => inst4.IN0
+a => inst6.IN0
+b => inst5.IN0
+b => inst.IN1
+b => inst6.IN1
+cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst2
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+b => Block_logic_gates:inst.a
+cin => Block_logic_gates:inst.b
+a => Block_logic_gates:inst1.a
+sum <= Block_logic_gates:inst1.sum
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst2|Block_logic_gates:inst
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst2.IN0
+a => inst4.IN0
+a => inst6.IN0
+b => inst5.IN0
+b => inst.IN1
+b => inst6.IN1
+cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst2|Block_logic_gates:inst1
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst2.IN0
+a => inst4.IN0
+a => inst6.IN0
+b => inst5.IN0
+b => inst.IN1
+b => inst6.IN1
+cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst3
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+b => Block_logic_gates:inst.a
+cin => Block_logic_gates:inst.b
+a => Block_logic_gates:inst1.a
+sum <= Block_logic_gates:inst1.sum
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst3|Block_logic_gates:inst
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst2.IN0
+a => inst4.IN0
+a => inst6.IN0
+b => inst5.IN0
+b => inst.IN1
+b => inst6.IN1
+cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block_4_bit_add_sub_symbol|Block_4_bit_add_sub:inst|Block_logic_2_half_adder:inst3|Block_logic_gates:inst1
+sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => inst2.IN0
+a => inst4.IN0
+a => inst6.IN0
+b => inst5.IN0
+b => inst.IN1
+b => inst6.IN1
+cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+

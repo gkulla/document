@@ -1,0 +1,15 @@
+to, location
+a0, PIN_N25
+b0, PIN_N26
+a1, PIN_P25
+b1, PIN_AE14
+a2, PIN_AF14
+b2, PIN_AD13
+a3, PIN_AC13
+b3, PIN_C13
+s,  PIN_V2
+
+f0, PIN_AE22
+f1, PIN_AF22
+f2, PIN_W19
+f3, PIN_V18

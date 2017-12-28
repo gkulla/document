@@ -1,0 +1,169 @@
+|Signed_Decimal_Block
+overflow <= Csc21100_4bit_add_sub:inst2.overflow
+a3 => Csc21100_4bit_add_sub:inst2.a3
+a2 => Csc21100_4bit_add_sub:inst2.a2
+a1 => Csc21100_4bit_add_sub:inst2.a1
+a0 => Csc21100_4bit_add_sub:inst2.a0
+b3 => Csc21100_4bit_add_sub:inst2.b3
+b2 => Csc21100_4bit_add_sub:inst2.b2
+b1 => Csc21100_4bit_add_sub:inst2.b1
+b0 => Csc21100_4bit_add_sub:inst2.b0
+cin => Csc21100_4bit_add_sub:inst2.cin
+output16 <= Seg_Display_Signed:inst.f0
+output15 <= Seg_Display_Signed:inst.f1
+output14 <= Seg_Display_Signed:inst.f2
+output13 <= Seg_Display_Signed:inst.f3
+output12 <= Seg_Display_Signed:inst.f4
+output11 <= Seg_Display_Signed:inst.f5
+output10 <= Seg_Display_Signed:inst.f6
+output26 <= Seg_Display_Signed:inst.sf0
+output25 <= Seg_Display_Signed:inst.sf1
+output24 <= Seg_Display_Signed:inst.sf2
+output23 <= Seg_Display_Signed:inst.sf3
+output22 <= Seg_Display_Signed:inst.sf4
+output21 <= Seg_Display_Signed:inst.sf5
+output20 <= Seg_Display_Signed:inst.sf6
+sum3 <= Csc21100_4bit_add_sub:inst2.sum3
+sum2 <= Csc21100_4bit_add_sub:inst2.sum2
+sum1 <= Csc21100_4bit_add_sub:inst2.sum1
+sum0 <= Csc21100_4bit_add_sub:inst2.sum0
+
+
+|Signed_Decimal_Block|Csc21100_4bit_add_sub:inst2
+a3 => Csc21100_1bit_add_sub:Csc_Bit_Adder3.a
+a2 => Csc21100_1bit_add_sub:Csc_Bit_Adder2.a
+a1 => Csc21100_1bit_add_sub:Csc_Bit_Adder1.a
+a0 => Csc21100_1bit_add_sub:Csc_Bit_Adder0.a
+b3 => temp[3].DATAA
+b3 => temp[3].DATAB
+b2 => temp[2].DATAA
+b2 => temp[2].DATAB
+b1 => temp[1].DATAA
+b1 => temp[1].DATAB
+b0 => temp[0].DATAA
+b0 => temp[0].DATAB
+cin => temp[3].OUTPUTSELECT
+cin => temp[2].OUTPUTSELECT
+cin => temp[1].OUTPUTSELECT
+cin => temp[0].OUTPUTSELECT
+cin => Csc21100_1bit_add_sub:Csc_Bit_Adder0.cin
+sum3 <= Csc21100_1bit_add_sub:Csc_Bit_Adder3.sum
+sum2 <= Csc21100_1bit_add_sub:Csc_Bit_Adder2.sum
+sum1 <= Csc21100_1bit_add_sub:Csc_Bit_Adder1.sum
+sum0 <= Csc21100_1bit_add_sub:Csc_Bit_Adder0.sum
+overflow <= Csc21100_1bit_add_sub:Csc_Bit_Adder3.cout
+
+
+|Signed_Decimal_Block|Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder0
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Signed_Decimal_Block|Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder1
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Signed_Decimal_Block|Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder2
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Signed_Decimal_Block|Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder3
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Signed_Decimal_Block|Seg_Display_Signed:inst
+A => sig_output1.IN0
+A => sig_output1.IN0
+A => sig_output1.IN0
+A => sig_output1.IN0
+A => sig_output1.IN0
+A => sig_output1.IN0
+A => sf0.DATAIN
+A => sf1.DATAIN
+A => sf2.DATAIN
+A => sf3.DATAIN
+A => sf4.DATAIN
+A => sf5.DATAIN
+A => sf6.DATAIN
+B => sig_output1.IN0
+B => sig_output1.IN1
+B => sig_output1.IN0
+B => sig_output1.IN1
+B => sig_output1.IN0
+B => sig_output1.IN1
+B => sig_output1.IN1
+B => sig_output1.IN0
+B => sig_output1.IN0
+C => sig_output1.IN0
+C => sig_output1.IN1
+C => sig_output1.IN1
+C => sig_output1.IN1
+C => sig_output1.IN1
+C => sig_output1.IN1
+C => sig_output1.IN0
+C => sig_output1.IN1
+C => sig_output1.IN0
+C => sig_output1.IN1
+D => sig_output1.IN1
+D => sig_output1.IN1
+D => sig_output1.IN1
+D => sig_output1.IN1
+D => sig_output1.IN1
+D => sig_output1.IN1
+D => sig_output1.IN1
+D => sig_output1.IN1
+f0 <= sig_output1[0].DB_MAX_OUTPUT_PORT_TYPE
+f1 <= sig_output1[1].DB_MAX_OUTPUT_PORT_TYPE
+f2 <= sig_output1[2].DB_MAX_OUTPUT_PORT_TYPE
+f3 <= sig_output1[3].DB_MAX_OUTPUT_PORT_TYPE
+f4 <= sig_output1[4].DB_MAX_OUTPUT_PORT_TYPE
+f5 <= sig_output1[5].DB_MAX_OUTPUT_PORT_TYPE
+f6 <= sig_output1[6].DB_MAX_OUTPUT_PORT_TYPE
+sf0 <= A.DB_MAX_OUTPUT_PORT_TYPE
+sf1 <= A.DB_MAX_OUTPUT_PORT_TYPE
+sf2 <= A.DB_MAX_OUTPUT_PORT_TYPE
+sf3 <= A.DB_MAX_OUTPUT_PORT_TYPE
+sf4 <= A.DB_MAX_OUTPUT_PORT_TYPE
+sf5 <= A.DB_MAX_OUTPUT_PORT_TYPE
+sf6 <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+

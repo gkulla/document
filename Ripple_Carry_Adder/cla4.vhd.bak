@@ -1,0 +1,51 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+---------------------------------------------------------------------
+PACKAGE Csc211_Gerti_Kulla_CLA_Package IS
+	COMPONENT cla_logic is
+		port(G, P: in std_logic_vector(3 downto 0);
+		      CIN: in std_logic;
+			    C: out std_logic_vector(2 downto 0); -- “internal” carry
+		 CGOUT, CPOUT: out std_logic);
+	end COMPONENT;
+	
+	COMPONENT full_adder_g_p is
+		port( a, b, cin: in std_logic;
+			  sum, g, p: out std_logic);
+    end COMPONENT;
+END Csc211_Gerti_Kulla_CLA_Package;
+----------------------------------------------------------------------
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.Csc211_Gerti_Kulla_CLA_Package.all;
+
+entity cla4 is -- 4-bit CLA structural model: top entity
+port( a, b: in std_logic_vector(3 downto 0);
+   carryin: in std_logic;
+       sum: out std_logic_vector(3 downto 0);
+       cgout, cpout, overflow: out std_logic);
+end cla4;
+
+architecture arch of cla4 is
+
+signal cg, cp, sig_b: std_logic_vector(3 downto 0); --local signals
+signal cout, carry: std_logic;
+begin
+PROCESS(carryin)
+	BEGIN
+		if (carryin = '0') then sig_b <= not b;
+		else
+		sig_b <= b;
+		END IF;
+END PROCESS;
+		
+carry <= carryin;
+ADD0:full_adder_g_p port map (a, sig_b, carry, sum, cg, cp);
+
+--generate carries from
+--propagate and generate values
+--from full_adder_g_p_g_p
+CLA:cla_logic port map(cg, cp, carryin, carry(3 downto 1), cout, cpout);
+cgout <= cout;
+overflow <= carry(3) xor cout;
+end arch;

@@ -1,0 +1,25 @@
+library IEEE;
+USE IEEE.std_logic_1164.all;
+
+ENTITY SR_latch IS
+port ( S, R, Clk   : in std_logic;
+       Q, notQ: buffer std_logic
+      );
+END SR_latch;
+
+Architecture Struct OF SR_latch IS
+Begin
+	PROCESS(S, R, Clk)
+	BEGIN
+	IF(Clk = '0') then Q<=Q;
+	ELSE  
+		IF(CLK='1' and S='0' and R='0') then Q<=Q;
+		ELSE IF(CLK='1' and S='0' and R='0') then Q<= Q;
+		ELSE IF(CLK='1' and S='0' and R='1') then Q<='0';
+		ELSE
+			 IF(CLK='1' and S='1' and R='0') then Q<='1';
+			 END IF;
+		END IF;
+	END IF;
+	END PROCESS;
+END Struct;

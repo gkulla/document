@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.721 ns
+From           : D
+To             : Negative_MS_D_latch:inst1|D_latch_block:inst|inst5
+From Clock     : --
+To Clock       : Clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.361 ns
+From           : Positive_MS_D_latch:inst2|D_latch_block:inst1|inst5~1
+To             : Q2
+From Clock     : Clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.168 ns
+From           : D
+To             : Positive_MS_D_latch:inst2|D_latch_block:inst|inst5
+From Clock     : --
+To Clock       : Clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 396.20 MHz ( period = 2.524 ns )
+From           : Negative_MS_D_latch:inst1|D_latch_block:inst|inst5
+To             : Negative_MS_D_latch:inst1|D_latch_block:inst1|inst5~1
+From Clock     : Clk
+To Clock       : Clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

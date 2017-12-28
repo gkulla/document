@@ -1,0 +1,16 @@
+to, location
+a4[0], PIN_AF22
+a4[1], PIN_N26
+a4[2], PIN_P25
+a4[3], PIN_AE14
+b4[0], PIN_AF14
+b4[1], PIN_AD13
+b4[2], PIN_AC13
+b4[3], PIN_C13
+cin,  PIN_V2
+
+sum4[0], PIN_AE23
+sum4[1], PIN_AF23
+sum4[2], PIN_AB21
+sum4[3], PIN_AC22
+cout4, PIN_AE22

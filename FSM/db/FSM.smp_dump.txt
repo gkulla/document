@@ -1,0 +1,12 @@
+
+State Machine - |Block1|FSM:inst|Y_D
+Name Y_D.I Y_D.H Y_D.G Y_D.F Y_D.E Y_D.D Y_D.C Y_D.B Y_D.A 
+Y_D.A 0 0 0 0 0 0 0 0 0 
+Y_D.B 0 0 0 0 0 0 0 1 1 
+Y_D.C 0 0 0 0 0 0 1 0 1 
+Y_D.D 0 0 0 0 0 1 0 0 1 
+Y_D.E 0 0 0 0 1 0 0 0 1 
+Y_D.F 0 0 0 1 0 0 0 0 1 
+Y_D.G 0 0 1 0 0 0 0 0 1 
+Y_D.H 0 1 0 0 0 0 0 0 1 
+Y_D.I 1 0 0 0 0 0 0 0 1 

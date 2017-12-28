@@ -1,0 +1,13 @@
+library IEEE;
+USE IEEE.std_logic_1164.all;
+
+ENTITY comparator IS
+port ( A, B, C, D: in std_logic;
+           output: out std_logic
+      );
+END comparator;
+
+Architecture Struct OF comparator IS
+Begin
+output <= (A and B)or(A and C);
+END Struct;

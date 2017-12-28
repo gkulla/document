@@ -1,0 +1,662 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+cla4_add_subtract
+# storage
+db|RCA8_bit.(0).cnf
+db|RCA8_bit.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cla4_add_subtract.vhd
+854de3ec675c7a32263f8c6882d52c46
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+full_adder_g_p
+# storage
+db|RCA8_bit.(2).cnf
+db|RCA8_bit.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+full_adder_g_p.vhd
+3c6915d656b12098692b5b532a2e6d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+RCA8_bit:inst1|full_adder_g_p:ADD80
+RCA8_bit:inst1|full_adder_g_p:ADD81
+RCA8_bit:inst1|full_adder_g_p:ADD82
+RCA8_bit:inst1|full_adder_g_p:ADD83
+RCA8_bit:inst1|full_adder_g_p:ADD84
+RCA8_bit:inst1|full_adder_g_p:ADD85
+RCA8_bit:inst1|full_adder_g_p:ADD86
+RCA8_bit:inst1|full_adder_g_p:ADD87
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+RCA8_bit
+# storage
+db|RCA8_bit.(1).cnf
+db|RCA8_bit.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rca8_bit.vhd
+91cc675edf3de75a3ecb095084c2d6
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+RCA8_bit:inst1
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Display
+# storage
+db|RCA8_bit.(4).cnf
+db|RCA8_bit.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+display.vhd
+1dd3bdc19748ef9bbb9afcb610588e70
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+cla_logic
+# storage
+db|RCA8_bit.(3).cnf
+db|RCA8_bit.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cla_logic.vhd
+a35115ad704a2adc8c897cb0d2bd3ce3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+RCA8_bit:inst1|cla_logic:CLA0
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Block1
+# storage
+db|RCA8_bit.(5).cnf
+db|RCA8_bit.(5).cnf
+# case_insensitive
+# source_file
+block1.bdf
+87c2a12c929f2019be1bcd36fa7cd0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Csc21100_8bit_add_sub
+# storage
+db|RCA8_bit.(6).cnf
+db|RCA8_bit.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csc21100_8bit_add_sub.vhd
+596744ab6b5a6cc9b7b23d5dcd2cf63b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Csc21100_8bit_add_sub:inst
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Csc21100_4bit_add_sub
+# storage
+db|RCA8_bit.(7).cnf
+db|RCA8_bit.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csc21100_4bit_add_sub.vhd
+d655bbaaf98ed5df1042a3a1f76ac5d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(b)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sum)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+add_sub
+# storage
+db|RCA8_bit.(8).cnf
+db|RCA8_bit.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+add_sub.vhd
+cd207dbc13e69cfbe39e33159d1d8882
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder0
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder1
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder2
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder0|add_sub:Csc_Bit_Adder3
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder0
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder1
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder2
+Csc21100_8bit_add_sub:inst|Csc21100_4bit_add_sub:Csc_Bit_Adder1|add_sub:Csc_Bit_Adder3
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Block2
+# storage
+db|RCA8_bit.(9).cnf
+db|RCA8_bit.(9).cnf
+# case_insensitive
+# source_file
+block2.bdf
+1eb9964081df88bf1131b788af32b9d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+My_LPM_Adder
+# storage
+db|RCA8_bit.(10).cnf
+db|RCA8_bit.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+|users|gerti|desktop|vhdl report|lab6|ripple_carry_adder|my_lpm_adder.vhd
+da1e1e14a5e124777069af40fb581d92
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+My_LPM_Adder:inst2
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|RCA8_bit.(11).cnf
+db|RCA8_bit.(11).cnf
+# case_insensitive
+# source_file
+d:|quartusii|quartus|libraries|megafunctions|lpm_add_sub.tdf
+74821f847e545ce9ad847cbce0ef11
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+REGISTERED_AT_END
+0
+PARAMETER_UNKNOWN
+DEF
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_k8i
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+overflow
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+cin
+-1
+3
+add_sub
+-1
+3
+}
+# hierarchies {
+My_LPM_Adder:inst2|lpm_add_sub:lpm_add_sub_component
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_k8i
+# storage
+db|RCA8_bit.(12).cnf
+db|RCA8_bit.(12).cnf
+# case_insensitive
+# source_file
+db|add_sub_k8i.tdf
+bafa7d1f835a9fc76a79afaec56c
+7
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+overflow
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+cin
+-1
+3
+add_sub
+-1
+3
+}
+# hierarchies {
+My_LPM_Adder:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_k8i:auto_generated
+}
+# macro_sequence
+
+# end
+# complete
+

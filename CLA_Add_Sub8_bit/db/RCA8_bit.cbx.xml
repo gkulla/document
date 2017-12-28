@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="RCA8_bit">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Block2|My_LPM_Adder:inst2|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_k8i.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

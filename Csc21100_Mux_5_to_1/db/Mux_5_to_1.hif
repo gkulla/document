@@ -1,0 +1,112 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Block_Mux_5_to_1
+# storage
+db|Mux_5_to_1.(2).cnf
+db|Mux_5_to_1.(2).cnf
+# case_insensitive
+# source_file
+block_mux_5_to_1.bdf
+ebde8fd4feb1d4b5a1f1927f826ae11f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Mux_5_to_1
+# storage
+db|Mux_5_to_1.(0).cnf
+db|Mux_5_to_1.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux_5_to_1.vhd
+6845c76f228623851bf50478516e9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Mux_5_to_1:inst
+}
+# lmf
+|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Mux_2_to_1
+# storage
+db|Mux_5_to_1.(1).cnf
+db|Mux_5_to_1.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux_5_to_1.vhd
+6845c76f228623851bf50478516e9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Mux_5_to_1:inst|Mux_2_to_1:mux_2_1_0
+Mux_5_to_1:inst|Mux_2_to_1:mux_2_1_1
+Mux_5_to_1:inst|Mux_2_to_1:mux_2_1_2
+Mux_5_to_1:inst|Mux_2_to_1:mux_2_1_3
+}
+# lmf
+|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

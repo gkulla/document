@@ -1,0 +1,13 @@
+library IEEE;
+USE IEEE.std_logic_1164.all;
+
+ENTITY dlatch IS
+port ( D, Clk  : in std_logic;
+       Q, notQ: out std_logic
+      );
+END dlatch;
+
+Architecture Struct OF dlatch IS
+Begin
+	Q <= D WHEN (Clk = '1');
+END Struct;

@@ -1,0 +1,121 @@
+|LPM_Block1
+overflow <= MY_LPM:inst2.overflow
+add_sub => inst1.IN0
+cin => MY_LPM:inst2.cin
+a[0] => MY_LPM:inst2.dataa[0]
+a[1] => MY_LPM:inst2.dataa[1]
+a[2] => MY_LPM:inst2.dataa[2]
+a[3] => MY_LPM:inst2.dataa[3]
+b[0] => MY_LPM:inst2.datab[0]
+b[1] => MY_LPM:inst2.datab[1]
+b[2] => MY_LPM:inst2.datab[2]
+b[3] => MY_LPM:inst2.datab[3]
+output1[0] <= Seg_Display:inst7.output1[0]
+output1[1] <= Seg_Display:inst7.output1[1]
+output1[2] <= Seg_Display:inst7.output1[2]
+output1[3] <= Seg_Display:inst7.output1[3]
+output1[4] <= Seg_Display:inst7.output1[4]
+output1[5] <= Seg_Display:inst7.output1[5]
+output1[6] <= Seg_Display:inst7.output1[6]
+
+
+|LPM_Block1|MY_LPM:inst2
+add_sub => lpm_add_sub:lpm_add_sub_component.add_sub
+cin => lpm_add_sub:lpm_add_sub_component.cin
+dataa[0] => lpm_add_sub:lpm_add_sub_component.dataa[0]
+dataa[1] => lpm_add_sub:lpm_add_sub_component.dataa[1]
+dataa[2] => lpm_add_sub:lpm_add_sub_component.dataa[2]
+dataa[3] => lpm_add_sub:lpm_add_sub_component.dataa[3]
+datab[0] => lpm_add_sub:lpm_add_sub_component.datab[0]
+datab[1] => lpm_add_sub:lpm_add_sub_component.datab[1]
+datab[2] => lpm_add_sub:lpm_add_sub_component.datab[2]
+datab[3] => lpm_add_sub:lpm_add_sub_component.datab[3]
+cout <= lpm_add_sub:lpm_add_sub_component.cout
+overflow <= lpm_add_sub:lpm_add_sub_component.overflow
+result[0] <= lpm_add_sub:lpm_add_sub_component.result[0]
+result[1] <= lpm_add_sub:lpm_add_sub_component.result[1]
+result[2] <= lpm_add_sub:lpm_add_sub_component.result[2]
+result[3] <= lpm_add_sub:lpm_add_sub_component.result[3]
+
+
+|LPM_Block1|MY_LPM:inst2|lpm_add_sub:lpm_add_sub_component
+dataa[0] => add_sub_g8i:auto_generated.dataa[0]
+dataa[1] => add_sub_g8i:auto_generated.dataa[1]
+dataa[2] => add_sub_g8i:auto_generated.dataa[2]
+dataa[3] => add_sub_g8i:auto_generated.dataa[3]
+datab[0] => add_sub_g8i:auto_generated.datab[0]
+datab[1] => add_sub_g8i:auto_generated.datab[1]
+datab[2] => add_sub_g8i:auto_generated.datab[2]
+datab[3] => add_sub_g8i:auto_generated.datab[3]
+cin => add_sub_g8i:auto_generated.cin
+add_sub => add_sub_g8i:auto_generated.add_sub
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= add_sub_g8i:auto_generated.result[0]
+result[1] <= add_sub_g8i:auto_generated.result[1]
+result[2] <= add_sub_g8i:auto_generated.result[2]
+result[3] <= add_sub_g8i:auto_generated.result[3]
+cout <= add_sub_g8i:auto_generated.cout
+overflow <= add_sub_g8i:auto_generated.overflow
+
+
+|LPM_Block1|MY_LPM:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_g8i:auto_generated
+add_sub => _.IN0
+add_sub => overflow.IN0
+cin => op_1.IN10
+cin => op_1.IN11
+cout <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => op_1.IN8
+dataa[1] => op_1.IN6
+dataa[2] => op_1.IN4
+dataa[3] => op_1.IN2
+datab[0] => _.IN1
+datab[1] => _.IN1
+datab[2] => _.IN1
+datab[3] => _.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LPM_Block1|Seg_Display:inst7
+input[0] => Mux0.IN19
+input[0] => Mux1.IN19
+input[0] => Mux2.IN19
+input[0] => Mux3.IN19
+input[0] => Mux4.IN19
+input[0] => Mux5.IN19
+input[0] => Mux6.IN19
+input[1] => Mux0.IN18
+input[1] => Mux1.IN18
+input[1] => Mux2.IN18
+input[1] => Mux3.IN18
+input[1] => Mux4.IN18
+input[1] => Mux5.IN18
+input[1] => Mux6.IN18
+input[2] => Mux0.IN17
+input[2] => Mux1.IN17
+input[2] => Mux2.IN17
+input[2] => Mux3.IN17
+input[2] => Mux4.IN17
+input[2] => Mux5.IN17
+input[2] => Mux6.IN17
+input[3] => Mux0.IN16
+input[3] => Mux1.IN16
+input[3] => Mux2.IN16
+input[3] => Mux3.IN16
+input[3] => Mux4.IN16
+input[3] => Mux5.IN16
+input[3] => Mux6.IN16
+output1[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+output1[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+output1[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+output1[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+output1[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+output1[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+output1[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

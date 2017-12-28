@@ -1,0 +1,175 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+SR_latch_block
+# storage
+db|SR_latch.(0).cnf
+db|SR_latch.(0).cnf
+# case_insensitive
+# source_file
+sr_latch_block.bdf
+1de05f871c47993ae5a13e22862351
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+SR_latch_clocked_block
+# storage
+db|SR_latch.(1).cnf
+db|SR_latch.(1).cnf
+# case_insensitive
+# source_file
+sr_latch_clocked_block.bdf
+752caee9507c76f1f6b8fcaf1f1e1c84
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+D_latch_block
+# storage
+db|SR_latch.(2).cnf
+db|SR_latch.(2).cnf
+# case_insensitive
+# source_file
+d_latch_block.bdf
+8d235d698a33d1201479201bf856a6c4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+D_latch_block:inst
+Positive_MS_D_latch:inst2|D_latch_block:inst1
+Positive_MS_D_latch:inst2|D_latch_block:inst
+Negative_MS_D_latch:inst1|D_latch_block:inst1
+Negative_MS_D_latch:inst1|D_latch_block:inst
+}
+# macro_sequence
+
+# end
+# entity
+Positive_MS_D_latch
+# storage
+db|SR_latch.(3).cnf
+db|SR_latch.(3).cnf
+# case_insensitive
+# source_file
+positive_ms_d_latch.bdf
+b3dd5d43ae1f2c9c477c615eab7953c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Positive_MS_D_latch:inst2
+}
+# macro_sequence
+
+# end
+# entity
+Negative_MS_D_latch
+# storage
+db|SR_latch.(4).cnf
+db|SR_latch.(4).cnf
+# case_insensitive
+# source_file
+negative_ms_d_latch.bdf
+af449babd5878b6a4a0f13054bce970
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Negative_MS_D_latch:inst1
+}
+# macro_sequence
+
+# end
+# entity
+JK_ff
+# storage
+db|SR_latch.(5).cnf
+db|SR_latch.(5).cnf
+# case_insensitive
+# source_file
+jk_ff.bdf
+50ef523f9e5f88216133411bd38bda90
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+T_ff
+# storage
+db|SR_latch.(6).cnf
+db|SR_latch.(6).cnf
+# case_insensitive
+# source_file
+t_ff.bdf
+d669932fe121ac4c10a2d93b98f637
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+comparison_block
+# storage
+db|SR_latch.(7).cnf
+db|SR_latch.(7).cnf
+# case_insensitive
+# source_file
+comparison_block.bdf
+7e73698643a4361584d2b060302aca3d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

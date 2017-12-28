@@ -1,0 +1,146 @@
+|Block
+cout4 <= Csc21100_Full_adder_4bit:inst.cout4
+cin => Csc21100_Full_adder_4bit:inst.cin
+a4[0] => Csc21100_Full_adder_4bit:inst.a4[0]
+a4[1] => Csc21100_Full_adder_4bit:inst.a4[1]
+a4[2] => Csc21100_Full_adder_4bit:inst.a4[2]
+a4[3] => Csc21100_Full_adder_4bit:inst.a4[3]
+b4[0] => Csc21100_Full_adder_4bit:inst.b4[0]
+b4[1] => Csc21100_Full_adder_4bit:inst.b4[1]
+b4[2] => Csc21100_Full_adder_4bit:inst.b4[2]
+b4[3] => Csc21100_Full_adder_4bit:inst.b4[3]
+sum4[0] <= Csc21100_Full_adder_4bit:inst.sum4[0]
+sum4[1] <= Csc21100_Full_adder_4bit:inst.sum4[1]
+sum4[2] <= Csc21100_Full_adder_4bit:inst.sum4[2]
+sum4[3] <= Csc21100_Full_adder_4bit:inst.sum4[3]
+
+
+|Block|Csc21100_Full_adder_4bit:inst
+a4[0] => Csc21100_Full_adder:Full_adder_4bit0.a1
+a4[1] => Csc21100_Full_adder:Full_adder_4bit1.a1
+a4[2] => Csc21100_Full_adder:Full_adder_4bit2.a1
+a4[3] => Csc21100_Full_adder:Full_adder_4bit3.a1
+b4[0] => sig_b[0].DATAA
+b4[0] => sig_b[0].DATAB
+b4[1] => sig_b[1].DATAA
+b4[1] => sig_b[1].DATAB
+b4[2] => sig_b[2].DATAA
+b4[2] => sig_b[2].DATAB
+b4[3] => sig_b[3].DATAA
+b4[3] => sig_b[3].DATAB
+cin => sig_b[3].OUTPUTSELECT
+cin => sig_b[2].OUTPUTSELECT
+cin => sig_b[1].OUTPUTSELECT
+cin => sig_b[0].OUTPUTSELECT
+cin => Csc21100_Full_adder:Full_adder_4bit0.cin1
+sum4[0] <= Csc21100_Full_adder:Full_adder_4bit0.sum1
+sum4[1] <= Csc21100_Full_adder:Full_adder_4bit1.sum1
+sum4[2] <= Csc21100_Full_adder:Full_adder_4bit2.sum1
+sum4[3] <= Csc21100_Full_adder:Full_adder_4bit3.sum1
+cout4 <= Csc21100_Full_adder:Full_adder_4bit3.cout1
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit0
+a1 => Csc21100_Half_adder:Full_adder0.a
+b1 => Csc21100_Half_adder:Full_adder0.b
+cin1 => Csc21100_Half_adder:Full_adder1.b
+sum1 <= Csc21100_Half_adder:Full_adder1.sum
+cout1 <= cout1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit0|Csc21100_Half_adder:Full_adder0
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit0|Csc21100_Half_adder:Full_adder1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit1
+a1 => Csc21100_Half_adder:Full_adder0.a
+b1 => Csc21100_Half_adder:Full_adder0.b
+cin1 => Csc21100_Half_adder:Full_adder1.b
+sum1 <= Csc21100_Half_adder:Full_adder1.sum
+cout1 <= cout1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit1|Csc21100_Half_adder:Full_adder0
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit1|Csc21100_Half_adder:Full_adder1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit2
+a1 => Csc21100_Half_adder:Full_adder0.a
+b1 => Csc21100_Half_adder:Full_adder0.b
+cin1 => Csc21100_Half_adder:Full_adder1.b
+sum1 <= Csc21100_Half_adder:Full_adder1.sum
+cout1 <= cout1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit2|Csc21100_Half_adder:Full_adder0
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit2|Csc21100_Half_adder:Full_adder1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit3
+a1 => Csc21100_Half_adder:Full_adder0.a
+b1 => Csc21100_Half_adder:Full_adder0.b
+cin1 => Csc21100_Half_adder:Full_adder1.b
+sum1 <= Csc21100_Half_adder:Full_adder1.sum
+cout1 <= cout1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit3|Csc21100_Half_adder:Full_adder0
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block|Csc21100_Full_adder_4bit:inst|Csc21100_Full_adder:Full_adder_4bit3|Csc21100_Half_adder:Full_adder1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

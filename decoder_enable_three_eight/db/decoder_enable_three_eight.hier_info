@@ -1,0 +1,69 @@
+|Block1
+f[0] <= decoder_enable_three_eight:inst.f[0]
+f[1] <= decoder_enable_three_eight:inst.f[1]
+f[2] <= decoder_enable_three_eight:inst.f[2]
+f[3] <= decoder_enable_three_eight:inst.f[3]
+f[4] <= decoder_enable_three_eight:inst.f[4]
+f[5] <= decoder_enable_three_eight:inst.f[5]
+f[6] <= decoder_enable_three_eight:inst.f[6]
+f[7] <= decoder_enable_three_eight:inst.f[7]
+en => decoder_enable_three_eight:inst.en
+a[0] => decoder_enable_three_eight:inst.a[0]
+a[1] => decoder_enable_three_eight:inst.a[1]
+
+
+|Block1|decoder_enable_three_eight:inst
+a[0] => decoder_enable:decoder0.a[0]
+a[0] => decoder_enable:decoder1.a[0]
+a[1] => decoder_enable:decoder0.a[1]
+a[1] => decoder_enable:decoder1.a[1]
+en => decoder_enable:decoder1.en
+en => decoder_enable:decoder0.en
+f[0] <= decoder_enable:decoder0.f[0]
+f[1] <= decoder_enable:decoder0.f[1]
+f[2] <= decoder_enable:decoder0.f[2]
+f[3] <= decoder_enable:decoder0.f[3]
+f[4] <= decoder_enable:decoder1.f[0]
+f[5] <= decoder_enable:decoder1.f[1]
+f[6] <= decoder_enable:decoder1.f[2]
+f[7] <= decoder_enable:decoder1.f[3]
+
+
+|Block1|decoder_enable_three_eight:inst|decoder_enable:decoder0
+a[0] => Mux0.IN5
+a[0] => Mux1.IN5
+a[0] => Mux2.IN5
+a[0] => Mux3.IN5
+a[1] => Mux0.IN4
+a[1] => Mux1.IN4
+a[1] => Mux2.IN4
+a[1] => Mux3.IN4
+en => f.OUTPUTSELECT
+en => f.OUTPUTSELECT
+en => f.OUTPUTSELECT
+en => f.OUTPUTSELECT
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|decoder_enable_three_eight:inst|decoder_enable:decoder1
+a[0] => Mux0.IN5
+a[0] => Mux1.IN5
+a[0] => Mux2.IN5
+a[0] => Mux3.IN5
+a[1] => Mux0.IN4
+a[1] => Mux1.IN4
+a[1] => Mux2.IN4
+a[1] => Mux3.IN4
+en => f.OUTPUTSELECT
+en => f.OUTPUTSELECT
+en => f.OUTPUTSELECT
+en => f.OUTPUTSELECT
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

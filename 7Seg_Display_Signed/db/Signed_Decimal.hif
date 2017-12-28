@@ -1,0 +1,145 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Csc21100_4bit_add_sub
+# storage
+db|Signed_Decimal.(1).cnf
+db|Signed_Decimal.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csc21100_4bit_add_sub.vhd
+02c8c2e7c82b5548f2c65948feda46
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Csc21100_4bit_add_sub:inst2
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Csc21100_1bit_add_sub
+# storage
+db|Signed_Decimal.(2).cnf
+db|Signed_Decimal.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csc21100_4bit_add_sub.vhd
+02c8c2e7c82b5548f2c65948feda46
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder0
+Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder1
+Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder2
+Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder3
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Signed_Decimal_Block
+# storage
+db|Signed_Decimal.(3).cnf
+db|Signed_Decimal.(3).cnf
+# case_insensitive
+# source_file
+signed_decimal_block.bdf
+67868f81fed08db570166654af53c7a9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Seg_Display_Signed
+# storage
+db|Signed_Decimal.(0).cnf
+db|Signed_Decimal.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+seg_display_signed.vhd
+7a6b079d9f9a289ae187c646160ad
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Seg_Display_Signed:inst
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

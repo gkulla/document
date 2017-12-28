@@ -1,0 +1,34 @@
+|T_f_f
+T => sD.IN1
+T => sD.IN1
+Clk => Positive_D_ff:MS_D_ff0.Clk
+Q << Positive_D_ff:MS_D_ff0.Q
+notQ << Positive_D_ff:MS_D_ff0.notQ
+
+
+|T_f_f|Positive_D_ff:MS_D_ff0
+D => D1_lach:MS_D_ff0.D
+Clk => D1_lach:MS_D_ff1.Clk
+Clk => D1_lach:MS_D_ff0.Clk
+Q <= D1_lach:MS_D_ff1.Q
+notQ <= D1_lach:MS_D_ff1.notQ
+
+
+|T_f_f|Positive_D_ff:MS_D_ff0|D1_lach:MS_D_ff0
+D => Q$latch.DATAIN
+D => notQ$latch.DATAIN
+Clk => notQ$latch.LATCH_ENABLE
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= notQ$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|T_f_f|Positive_D_ff:MS_D_ff0|D1_lach:MS_D_ff1
+D => Q$latch.DATAIN
+D => notQ$latch.DATAIN
+Clk => notQ$latch.LATCH_ENABLE
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= notQ$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

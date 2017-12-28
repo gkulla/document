@@ -1,0 +1,176 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+d_latch
+# storage
+db|register.(0).cnf
+db|register.(0).cnf
+# case_insensitive
+# source_file
+d_latch.bdf
+77657b81331b2246767d3ae94c794cc7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ms_ff:inst18|d_latch:inst1
+ms_ff:inst18|d_latch:inst
+ms_ff:inst17|d_latch:inst1
+ms_ff:inst17|d_latch:inst
+ms_ff:inst16|d_latch:inst1
+ms_ff:inst16|d_latch:inst
+ms_ff:inst15|d_latch:inst1
+ms_ff:inst15|d_latch:inst
+ms_ff:inst14|d_latch:inst1
+ms_ff:inst14|d_latch:inst
+ms_ff:inst13|d_latch:inst1
+ms_ff:inst13|d_latch:inst
+ms_ff:inst12|d_latch:inst1
+ms_ff:inst12|d_latch:inst
+ms_ff:inst10|d_latch:inst1
+ms_ff:inst10|d_latch:inst
+ms_ff:inst8|d_latch:inst1
+ms_ff:inst8|d_latch:inst
+ms_ff:inst7|d_latch:inst1
+ms_ff:inst7|d_latch:inst
+ms_ff:inst6|d_latch:inst1
+ms_ff:inst6|d_latch:inst
+ms_ff:inst5|d_latch:inst1
+ms_ff:inst5|d_latch:inst
+ms_ff:inst3|d_latch:inst1
+ms_ff:inst3|d_latch:inst
+ms_ff:inst2|d_latch:inst1
+ms_ff:inst2|d_latch:inst
+ms_ff:inst1|d_latch:inst1
+ms_ff:inst1|d_latch:inst
+ms_ff:inst|d_latch:inst1
+ms_ff:inst|d_latch:inst
+}
+# macro_sequence
+
+# end
+# entity
+ms_ff
+# storage
+db|register.(1).cnf
+db|register.(1).cnf
+# case_insensitive
+# source_file
+ms_ff.bdf
+6516253ab86c62ee73443737f4c88e42
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ms_ff:inst18
+ms_ff:inst17
+ms_ff:inst16
+ms_ff:inst15
+ms_ff:inst14
+ms_ff:inst13
+ms_ff:inst12
+ms_ff:inst10
+ms_ff:inst8
+ms_ff:inst7
+ms_ff:inst6
+ms_ff:inst5
+ms_ff:inst3
+ms_ff:inst2
+ms_ff:inst1
+ms_ff:inst
+}
+# macro_sequence
+
+# end
+# entity
+decoder
+# storage
+db|register.(4).cnf
+db|register.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decoder.vhd
+8e1bf0b0513c8f7e6181e4f8030b268
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+mod_block
+# storage
+db|register.(2).cnf
+db|register.(2).cnf
+# case_insensitive
+# source_file
+mod_block.bdf
+c611e6986fe450c13f5077c1a8c4601d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+register
+# storage
+db|register.(3).cnf
+db|register.(3).cnf
+# case_insensitive
+# source_file
+register.bdf
+84e43026df7da4aa54e736fb1a3cb37e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# complete
+

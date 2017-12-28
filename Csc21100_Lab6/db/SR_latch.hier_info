@@ -1,0 +1,73 @@
+|comparison_block
+Q1 <= D_latch_block:inst.Q
+D => D_latch_block:inst.D
+D => Positive_MS_D_latch:inst2.D
+D => Negative_MS_D_latch:inst1.D
+Clk => D_latch_block:inst.Clk
+Clk => Positive_MS_D_latch:inst2.Clk
+Clk => Negative_MS_D_latch:inst1.Clk
+Q2 <= Positive_MS_D_latch:inst2.Q
+Q3 <= Negative_MS_D_latch:inst1.Q
+
+
+|comparison_block|D_latch_block:inst
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => inst2.IN1
+Clk => inst3.IN1
+Clk => inst2.IN0
+notQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparison_block|Positive_MS_D_latch:inst2
+Q <= D_latch_block:inst1.Q
+D => D_latch_block:inst.D
+Clk => inst10.IN0
+Clk => D_latch_block:inst1.Clk
+notQ <= D_latch_block:inst1.notQ
+
+
+|comparison_block|Positive_MS_D_latch:inst2|D_latch_block:inst1
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => inst2.IN1
+Clk => inst3.IN1
+Clk => inst2.IN0
+notQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparison_block|Positive_MS_D_latch:inst2|D_latch_block:inst
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => inst2.IN1
+Clk => inst3.IN1
+Clk => inst2.IN0
+notQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparison_block|Negative_MS_D_latch:inst1
+Q <= D_latch_block:inst1.Q
+D => D_latch_block:inst.D
+Clk => D_latch_block:inst.Clk
+Clk => inst10.IN0
+notQ <= D_latch_block:inst1.notQ
+
+
+|comparison_block|Negative_MS_D_latch:inst1|D_latch_block:inst1
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => inst2.IN1
+Clk => inst3.IN1
+Clk => inst2.IN0
+notQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparison_block|Negative_MS_D_latch:inst1|D_latch_block:inst
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => inst2.IN1
+Clk => inst3.IN1
+Clk => inst2.IN0
+notQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

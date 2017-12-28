@@ -1,0 +1,51 @@
+|Mux_8_to_4
+a[0] => Mux_2_to_1:mux_2_1_0.a
+a[1] => Mux_2_to_1:mux_2_1_1.a
+a[2] => Mux_2_to_1:mux_2_1_2.a
+a[3] => Mux_2_to_1:mux_2_1_3.a
+b[0] => Mux_2_to_1:mux_2_1_0.b
+b[1] => Mux_2_to_1:mux_2_1_1.b
+b[2] => Mux_2_to_1:mux_2_1_2.b
+b[3] => Mux_2_to_1:mux_2_1_3.b
+s => Mux_2_to_1:mux_2_1_0.s
+s => Mux_2_to_1:mux_2_1_1.s
+s => Mux_2_to_1:mux_2_1_2.s
+s => Mux_2_to_1:mux_2_1_3.s
+f[0] <= Mux_2_to_1:mux_2_1_0.f
+f[1] <= Mux_2_to_1:mux_2_1_1.f
+f[2] <= Mux_2_to_1:mux_2_1_2.f
+f[3] <= Mux_2_to_1:mux_2_1_3.f
+
+
+|Mux_8_to_4|Mux_2_to_1:mux_2_1_0
+a => f~0.IN0
+b => f~1.IN0
+s => f~0.IN1
+s => f~1.IN1
+f <= f~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux_8_to_4|Mux_2_to_1:mux_2_1_1
+a => f~0.IN0
+b => f~1.IN0
+s => f~0.IN1
+s => f~1.IN1
+f <= f~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux_8_to_4|Mux_2_to_1:mux_2_1_2
+a => f~0.IN0
+b => f~1.IN0
+s => f~0.IN1
+s => f~1.IN1
+f <= f~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux_8_to_4|Mux_2_to_1:mux_2_1_3
+a => f~0.IN0
+b => f~1.IN0
+s => f~0.IN1
+s => f~1.IN1
+f <= f~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

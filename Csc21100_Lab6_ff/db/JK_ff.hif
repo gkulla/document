@@ -1,0 +1,281 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+D_latch
+# storage
+db|JK_ff.(0).cnf
+db|JK_ff.(0).cnf
+# case_insensitive
+# source_file
+d_latch.bdf
+70252c7367d6a968c7b292e84e77631c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+MS_ff_d_latch
+# storage
+db|JK_ff.(1).cnf
+db|JK_ff.(1).cnf
+# case_insensitive
+# source_file
+ms_ff_d_latch.bdf
+cf392913c44791d10c745e83e96f0b0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+JK_ff
+# storage
+db|JK_ff.(2).cnf
+db|JK_ff.(2).cnf
+# case_insensitive
+# source_file
+jk_ff.bdf
+8b78a2a28df0e7e6488168dc6ef1fd46
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+T_ff
+# storage
+db|JK_ff.(3).cnf
+db|JK_ff.(3).cnf
+# case_insensitive
+# source_file
+t_ff.bdf
+7cbe761bbf5e562af3be51d7b2b815da
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+D1_lach
+# storage
+db|JK_ff.(4).cnf
+db|JK_ff.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+d1_lach.vhd
+767011aac52dcf22b7f4268aa16c62fc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Positive_D_ff:MS_D_ff0|D1_lach:MS_D_ff0
+Positive_D_ff:MS_D_ff0|D1_lach:MS_D_ff1
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Negative_D_ff
+# storage
+db|JK_ff.(6).cnf
+db|JK_ff.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+negative_d_ff.vhd
+1ab5634c4ed37cc39c330dbbfe1e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Positive_D_ff
+# storage
+db|JK_ff.(5).cnf
+db|JK_ff.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+positive_d_ff.vhd
+dd6a8dfb6c8a8cd8409327ed85833c1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Positive_D_ff:MS_D_ff0
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+SR_latch
+# storage
+db|JK_ff.(7).cnf
+db|JK_ff.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sr_latch.vhd
+f4db35689b28f22405f60b1fef4bb86
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+JK_ff
+# storage
+db|JK_ff.(8).cnf
+db|JK_ff.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+jk_ff.vhd
+e93dbee47dcc155f572bf27f214c65e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+T_f_f
+# storage
+db|JK_ff.(9).cnf
+db|JK_ff.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+t_f_f.vhd
+7de755478a3de75fdf2929d7170c869
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

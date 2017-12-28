@@ -1,0 +1,265 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+add_sub
+# storage
+db|add_sub.(0).cnf
+db|add_sub.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+add_sub.vhd
+cd207dbc13e69cfbe39e33159d1d8882
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Decimal_Display:inst|add_sub:Csc_Bit_Adder0
+Decimal_Display:inst|add_sub:Csc_Bit_Adder1
+Decimal_Display:inst|add_sub:Csc_Bit_Adder2
+Decimal_Display:inst|add_sub:Csc_Bit_Adder3
+Decimal_Display:inst|add_sub:Csc_Bit_Adder4
+Decimal_Display:inst|add_sub:Csc_Bit_Adder5
+Decimal_Display:inst|add_sub:Csc_Bit_Adder6
+Decimal_Display:inst|add_sub:Csc_Bit_Adder7
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Mux_8_to_4
+# storage
+db|add_sub.(1).cnf
+db|add_sub.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux_8_to_4.vhd
+8ff755f3bbc47e2f48bedb5ce1a8d22
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Decimal_Display:inst|Mux_8_to_4:Csc_Mux
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Seg_display_tens
+# storage
+db|add_sub.(2).cnf
+db|add_sub.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+seg_display_tens.vhd
+206cefd1c95f15a0419816904497ec
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Decimal_Display:inst|Seg_display_tens:Csc_Seg_Display_tens
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Seg_Display
+# storage
+db|add_sub.(3).cnf
+db|add_sub.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+seg_display.vhd
+b9cf8789a7967ae2374ac1ed3ca671a6
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Decimal_Display:inst|Seg_Display:Csc_Seg_Display
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+comparator
+# storage
+db|add_sub.(6).cnf
+db|add_sub.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+comparator.vhd
+69befdacd9557a513bc8fcd2278ccda0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Decimal_Display:inst|comparator:Csc_Comparator
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Block1
+# storage
+db|add_sub.(5).cnf
+db|add_sub.(5).cnf
+# case_insensitive
+# source_file
+block1.bdf
+fb634cf08313f12d60e030431951307
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Decimal_Display
+# storage
+db|add_sub.(4).cnf
+db|add_sub.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decimal_display.vhd
+89cfc07a7f34a86f675acc82f260c622
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Decimal_Display:inst
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Block2
+# storage
+db|add_sub.(7).cnf
+db|add_sub.(7).cnf
+# case_insensitive
+# source_file
+block2.bdf
+6fcfc4d46ab0afdda8503ef33a24d80
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,45 @@
+|Block1
+f <= Mux_4_to_1:inst.f
+a[0] => Mux_4_to_1:inst.a[0]
+a[1] => Mux_4_to_1:inst.a[1]
+a[2] => Mux_4_to_1:inst.a[2]
+a[3] => Mux_4_to_1:inst.a[3]
+s[0] => Mux_4_to_1:inst.s[0]
+s[1] => Mux_4_to_1:inst.s[1]
+
+
+|Block1|Mux_4_to_1:inst
+a[0] => Mux_2_to_1:mux_2_1_0.a
+a[1] => Mux_2_to_1:mux_2_1_0.b
+a[2] => Mux_2_to_1:mux_2_1_1.a
+a[3] => Mux_2_to_1:mux_2_1_1.b
+s[0] => Mux_2_to_1:mux_2_1_0.s
+s[0] => Mux_2_to_1:mux_2_1_1.s
+s[1] => Mux_2_to_1:mux_2_1_2.s
+f <= Mux_2_to_1:mux_2_1_2.f
+
+
+|Block1|Mux_4_to_1:inst|Mux_2_to_1:mux_2_1_0
+a => f.IN0
+b => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|Mux_4_to_1:inst|Mux_2_to_1:mux_2_1_1
+a => f.IN0
+b => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|Mux_4_to_1:inst|Mux_2_to_1:mux_2_1_2
+a => f.IN0
+b => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

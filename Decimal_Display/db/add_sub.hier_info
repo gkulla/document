@@ -1,0 +1,269 @@
+|Block2
+output1[0] <= Decimal_Display:inst.decimal_display[0]
+output1[1] <= Decimal_Display:inst.decimal_display[1]
+output1[2] <= Decimal_Display:inst.decimal_display[2]
+output1[3] <= Decimal_Display:inst.decimal_display[3]
+output1[4] <= Decimal_Display:inst.decimal_display[4]
+output1[5] <= Decimal_Display:inst.decimal_display[5]
+output1[6] <= Decimal_Display:inst.decimal_display[6]
+cin => Decimal_Display:inst.cin
+a[0] => Decimal_Display:inst.a[0]
+a[1] => Decimal_Display:inst.a[1]
+a[2] => Decimal_Display:inst.a[2]
+a[3] => Decimal_Display:inst.a[3]
+b[0] => Decimal_Display:inst.b[0]
+b[1] => Decimal_Display:inst.b[1]
+b[2] => Decimal_Display:inst.b[2]
+b[3] => Decimal_Display:inst.b[3]
+six[0] => Decimal_Display:inst.six[0]
+six[1] => Decimal_Display:inst.six[1]
+six[2] => Decimal_Display:inst.six[2]
+six[3] => Decimal_Display:inst.six[3]
+zero[0] => Decimal_Display:inst.zero[0]
+zero[1] => Decimal_Display:inst.zero[1]
+zero[2] => Decimal_Display:inst.zero[2]
+zero[3] => Decimal_Display:inst.zero[3]
+tens[0] <= Decimal_Display:inst.tens_display[0]
+tens[1] <= Decimal_Display:inst.tens_display[1]
+tens[2] <= Decimal_Display:inst.tens_display[2]
+tens[3] <= Decimal_Display:inst.tens_display[3]
+tens[4] <= Decimal_Display:inst.tens_display[4]
+tens[5] <= Decimal_Display:inst.tens_display[5]
+tens[6] <= Decimal_Display:inst.tens_display[6]
+
+
+|Block2|Decimal_Display:inst
+a[0] => add_sub:Csc_Bit_Adder0.a
+a[1] => add_sub:Csc_Bit_Adder1.a
+a[2] => add_sub:Csc_Bit_Adder2.a
+a[3] => add_sub:Csc_Bit_Adder3.a
+b[0] => temp[0].DATAA
+b[0] => temp[0].DATAB
+b[1] => temp[1].DATAA
+b[1] => temp[1].DATAB
+b[2] => temp[2].DATAA
+b[2] => temp[2].DATAB
+b[3] => temp[3].DATAA
+b[3] => temp[3].DATAB
+zero[0] => Mux_8_to_4:Csc_Mux.a[0]
+zero[1] => Mux_8_to_4:Csc_Mux.a[1]
+zero[2] => Mux_8_to_4:Csc_Mux.a[2]
+zero[3] => Mux_8_to_4:Csc_Mux.a[3]
+six[0] => Mux_8_to_4:Csc_Mux.b[0]
+six[1] => Mux_8_to_4:Csc_Mux.b[1]
+six[2] => Mux_8_to_4:Csc_Mux.b[2]
+six[3] => Mux_8_to_4:Csc_Mux.b[3]
+cin => temp[3].OUTPUTSELECT
+cin => temp[2].OUTPUTSELECT
+cin => temp[1].OUTPUTSELECT
+cin => temp[0].OUTPUTSELECT
+cin => add_sub:Csc_Bit_Adder0.cin
+cin => add_sub:Csc_Bit_Adder4.cin
+tens_display[0] <= Seg_display_tens:Csc_Seg_Display_tens.display[0]
+tens_display[1] <= Seg_display_tens:Csc_Seg_Display_tens.display[1]
+tens_display[2] <= Seg_display_tens:Csc_Seg_Display_tens.display[2]
+tens_display[3] <= Seg_display_tens:Csc_Seg_Display_tens.display[3]
+tens_display[4] <= Seg_display_tens:Csc_Seg_Display_tens.display[4]
+tens_display[5] <= Seg_display_tens:Csc_Seg_Display_tens.display[5]
+tens_display[6] <= Seg_display_tens:Csc_Seg_Display_tens.display[6]
+decimal_display[0] <= Seg_Display:Csc_Seg_Display.output1[0]
+decimal_display[1] <= Seg_Display:Csc_Seg_Display.output1[1]
+decimal_display[2] <= Seg_Display:Csc_Seg_Display.output1[2]
+decimal_display[3] <= Seg_Display:Csc_Seg_Display.output1[3]
+decimal_display[4] <= Seg_Display:Csc_Seg_Display.output1[4]
+decimal_display[5] <= Seg_Display:Csc_Seg_Display.output1[5]
+decimal_display[6] <= Seg_Display:Csc_Seg_Display.output1[6]
+
+
+|Block2|Decimal_Display:inst|add_sub:Csc_Bit_Adder0
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|add_sub:Csc_Bit_Adder1
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|add_sub:Csc_Bit_Adder2
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|add_sub:Csc_Bit_Adder3
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|comparator:Csc_Comparator
+a[0] => ~NO_FANOUT~
+a[1] => output.IN0
+a[2] => output.IN0
+a[3] => output.IN1
+a[3] => output.IN1
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|Mux_8_to_4:Csc_Mux
+a[0] => output.DATAB
+a[1] => output.DATAB
+a[2] => output.DATAB
+a[3] => output.DATAB
+b[0] => output.DATAA
+b[1] => output.DATAA
+b[2] => output.DATAA
+b[3] => output.DATAA
+s => output.OUTPUTSELECT
+s => output.OUTPUTSELECT
+s => output.OUTPUTSELECT
+s => output.OUTPUTSELECT
+output[0] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|add_sub:Csc_Bit_Adder4
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|add_sub:Csc_Bit_Adder5
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|add_sub:Csc_Bit_Adder6
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|add_sub:Csc_Bit_Adder7
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|Seg_Display:Csc_Seg_Display
+input[0] => Mux0.IN19
+input[0] => Mux1.IN19
+input[0] => Mux2.IN19
+input[0] => Mux3.IN19
+input[0] => Mux4.IN19
+input[0] => Mux5.IN19
+input[0] => Mux6.IN19
+input[1] => Mux0.IN18
+input[1] => Mux1.IN18
+input[1] => Mux2.IN18
+input[1] => Mux3.IN18
+input[1] => Mux4.IN18
+input[1] => Mux5.IN18
+input[1] => Mux6.IN18
+input[2] => Mux0.IN17
+input[2] => Mux1.IN17
+input[2] => Mux2.IN17
+input[2] => Mux3.IN17
+input[2] => Mux4.IN17
+input[2] => Mux5.IN17
+input[2] => Mux6.IN17
+input[3] => Mux0.IN16
+input[3] => Mux1.IN16
+input[3] => Mux2.IN16
+input[3] => Mux3.IN16
+input[3] => Mux4.IN16
+input[3] => Mux5.IN16
+input[3] => Mux6.IN16
+output1[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+output1[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+output1[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+output1[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+output1[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+output1[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+output1[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block2|Decimal_Display:inst|Seg_display_tens:Csc_Seg_Display_tens
+z => display[5].DATAIN
+z => display[4].DATAIN
+z => display[3].DATAIN
+z => display[0].DATAIN
+display[0] <= z.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= <GND>
+display[2] <= <GND>
+display[3] <= z.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= z.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= z.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= <VCC>
+
+

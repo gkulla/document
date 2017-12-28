@@ -1,0 +1,147 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Mux_2_to_1
+# storage
+db|Mux_2_to_1.(0).cnf
+db|Mux_2_to_1.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux_2_to_1.vhd
+f046b59e956d5ab4b54b665a96ae44cf
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Mux_2_to_1:inst
+Mux_2_to_1:inst1
+Mux_2_to_1:inst2
+Mux_2_to_1:inst3
+}
+# lmf
+|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Block1
+# storage
+db|Mux_2_to_1.(1).cnf
+db|Mux_2_to_1.(1).cnf
+# case_insensitive
+# source_file
+block1.bdf
+a87b5f78803dc9f5557bb05ea76c7e89
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Block2
+# storage
+db|Mux_2_to_1.(3).cnf
+db|Mux_2_to_1.(3).cnf
+# case_insensitive
+# source_file
+block2.bdf
+22fa3d13c9cacdabd3d15ca0c2323
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Block3
+# storage
+db|Mux_2_to_1.(2).cnf
+db|Mux_2_to_1.(2).cnf
+# case_insensitive
+# source_file
+block3.bdf
+62edfbdee357e7a992d4aa754f8bca8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Block_4_to_to_Mux
+# storage
+db|Mux_2_to_1.(4).cnf
+db|Mux_2_to_1.(4).cnf
+# case_insensitive
+# source_file
+block_4_to_to_mux.bdf
+4546e8a851a25a2c331684aba0402
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Block_5_to_1_component
+# storage
+db|Mux_2_to_1.(5).cnf
+db|Mux_2_to_1.(5).cnf
+# case_insensitive
+# source_file
+block_5_to_1_component.bdf
+c3ee341a175527e89e62315c48ad0bb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# complete
+

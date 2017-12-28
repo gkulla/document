@@ -1,0 +1,20 @@
+library ieee;
+use ieee.STD_LOGIC_1164.ALL;
+
+entity busWire is
+  port( A, B, C, D, E, F, G, H : in std_logic;
+        f : out std_logic_vector(7 downto 0)
+        );  
+end busWire;
+
+architecture struct of busWire is
+begin
+f(7) <= A;
+f(6) <= B;
+f(5) <= C;
+f(4) <= D;
+f(3) <= E;
+f(2) <= F;
+f(1) <= G;
+f(0) <= H;
+END struct;

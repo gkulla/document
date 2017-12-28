@@ -1,0 +1,33 @@
+|Block1
+f[0] <= encoder_8_3:inst.f[0]
+f[1] <= encoder_8_3:inst.f[1]
+f[2] <= encoder_8_3:inst.f[2]
+a[0] => encoder_8_3:inst.a[0]
+a[1] => encoder_8_3:inst.a[1]
+a[2] => encoder_8_3:inst.a[2]
+a[3] => encoder_8_3:inst.a[3]
+a[4] => encoder_8_3:inst.a[4]
+a[5] => encoder_8_3:inst.a[5]
+a[6] => encoder_8_3:inst.a[6]
+a[7] => encoder_8_3:inst.a[7]
+
+
+|Block1|encoder_8_3:inst
+a[0] => ~NO_FANOUT~
+a[1] => f.IN0
+a[2] => f.IN0
+a[3] => f.IN1
+a[3] => f.IN1
+a[4] => f.IN0
+a[5] => f.IN1
+a[5] => f.IN1
+a[6] => f.IN1
+a[6] => f.IN1
+a[7] => f.IN1
+a[7] => f.IN1
+a[7] => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

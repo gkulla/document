@@ -1,0 +1,203 @@
+|Block1
+output[0] <= FB_reg:inst.Q[0]
+output[1] <= FB_reg:inst.Q[1]
+output[2] <= FB_reg:inst.Q[2]
+output[3] <= FB_reg:inst.Q[3]
+output[4] <= FB_reg:inst.Q[4]
+output[5] <= FB_reg:inst.Q[5]
+output[6] <= FB_reg:inst.Q[6]
+output[7] <= FB_reg:inst.Q[7]
+A => FB_reg:inst.A
+D => FB_reg:inst.D
+Clk => FB_reg:inst.Clk
+
+
+|Block1|FB_reg:inst
+A => input.OUTPUTSELECT
+D => input.DATAB
+Clk => MS_ff:FB_reg0.Clk
+Clk => MS_ff:FB_reg1.Clk
+Clk => MS_ff:FB_reg2.Clk
+Clk => MS_ff:FB_reg3.Clk
+Clk => MS_ff:FB_reg4.Clk
+Clk => MS_ff:FB_reg5.Clk
+Clk => MS_ff:FB_reg6.Clk
+Clk => MS_ff:FB_reg7.Clk
+Q[0] <= MS_ff:FB_reg0.Q
+Q[1] <= MS_ff:FB_reg1.Q
+Q[2] <= MS_ff:FB_reg2.Q
+Q[3] <= MS_ff:FB_reg3.Q
+Q[4] <= MS_ff:FB_reg4.Q
+Q[5] <= MS_ff:FB_reg5.Q
+Q[6] <= MS_ff:FB_reg6.Q
+Q[7] <= MS_ff:FB_reg7.Q
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg0
+D => d_latch:SRAM0.D
+Clk => d_latch:SRAM1.Clk
+Clk => d_latch:SRAM0.Clk
+Q <= d_latch:SRAM1.Q
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg0|d_latch:SRAM0
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg0|d_latch:SRAM1
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg1
+D => d_latch:SRAM0.D
+Clk => d_latch:SRAM1.Clk
+Clk => d_latch:SRAM0.Clk
+Q <= d_latch:SRAM1.Q
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg1|d_latch:SRAM0
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg1|d_latch:SRAM1
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg2
+D => d_latch:SRAM0.D
+Clk => d_latch:SRAM1.Clk
+Clk => d_latch:SRAM0.Clk
+Q <= d_latch:SRAM1.Q
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg2|d_latch:SRAM0
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg2|d_latch:SRAM1
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg3
+D => d_latch:SRAM0.D
+Clk => d_latch:SRAM1.Clk
+Clk => d_latch:SRAM0.Clk
+Q <= d_latch:SRAM1.Q
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg3|d_latch:SRAM0
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg3|d_latch:SRAM1
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg4
+D => d_latch:SRAM0.D
+Clk => d_latch:SRAM1.Clk
+Clk => d_latch:SRAM0.Clk
+Q <= d_latch:SRAM1.Q
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg4|d_latch:SRAM0
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg4|d_latch:SRAM1
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg5
+D => d_latch:SRAM0.D
+Clk => d_latch:SRAM1.Clk
+Clk => d_latch:SRAM0.Clk
+Q <= d_latch:SRAM1.Q
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg5|d_latch:SRAM0
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg5|d_latch:SRAM1
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg6
+D => d_latch:SRAM0.D
+Clk => d_latch:SRAM1.Clk
+Clk => d_latch:SRAM0.Clk
+Q <= d_latch:SRAM1.Q
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg6|d_latch:SRAM0
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg6|d_latch:SRAM1
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg7
+D => d_latch:SRAM0.D
+Clk => d_latch:SRAM1.Clk
+Clk => d_latch:SRAM0.Clk
+Q <= d_latch:SRAM1.Q
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg7|d_latch:SRAM0
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|FB_reg:inst|MS_ff:FB_reg7|d_latch:SRAM1
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+notQ <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

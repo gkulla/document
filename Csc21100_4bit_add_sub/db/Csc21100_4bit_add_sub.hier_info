@@ -1,0 +1,158 @@
+|BlockDisplay
+Overflow <= Csc21100_4bit_add_sub:inst2.overflow
+cin => Csc21100_4bit_add_sub:inst2.cin
+a3[0] => Csc21100_4bit_add_sub:inst2.a3[0]
+a3[1] => Csc21100_4bit_add_sub:inst2.a3[1]
+a3[2] => Csc21100_4bit_add_sub:inst2.a3[2]
+a3[3] => Csc21100_4bit_add_sub:inst2.a3[3]
+b3[0] => Csc21100_4bit_add_sub:inst2.b3[0]
+b3[1] => Csc21100_4bit_add_sub:inst2.b3[1]
+b3[2] => Csc21100_4bit_add_sub:inst2.b3[2]
+b3[3] => Csc21100_4bit_add_sub:inst2.b3[3]
+output1[0] <= Seg_Display_Signed:inst.output1[0]
+output1[1] <= Seg_Display_Signed:inst.output1[1]
+output1[2] <= Seg_Display_Signed:inst.output1[2]
+output1[3] <= Seg_Display_Signed:inst.output1[3]
+output1[4] <= Seg_Display_Signed:inst.output1[4]
+output1[5] <= Seg_Display_Signed:inst.output1[5]
+output1[6] <= Seg_Display_Signed:inst.output1[6]
+output2[0] <= Seg_Display_Signed:inst.output2[0]
+output2[1] <= Seg_Display_Signed:inst.output2[1]
+output2[2] <= Seg_Display_Signed:inst.output2[2]
+output2[3] <= Seg_Display_Signed:inst.output2[3]
+output2[4] <= Seg_Display_Signed:inst.output2[4]
+output2[5] <= Seg_Display_Signed:inst.output2[5]
+output2[6] <= Seg_Display_Signed:inst.output2[6]
+
+
+|BlockDisplay|Csc21100_4bit_add_sub:inst2
+a3[0] => Csc21100_1bit_add_sub:Csc_Bit_Adder0.a
+a3[1] => Csc21100_1bit_add_sub:Csc_Bit_Adder1.a
+a3[2] => Csc21100_1bit_add_sub:Csc_Bit_Adder2.a
+a3[3] => Csc21100_1bit_add_sub:Csc_Bit_Adder3.a
+b3[0] => temp[0].DATAA
+b3[0] => temp[0].DATAB
+b3[1] => temp[1].DATAA
+b3[1] => temp[1].DATAB
+b3[2] => temp[2].DATAA
+b3[2] => temp[2].DATAB
+b3[3] => temp[3].DATAA
+b3[3] => temp[3].DATAB
+cin => temp[3].OUTPUTSELECT
+cin => temp[2].OUTPUTSELECT
+cin => temp[1].OUTPUTSELECT
+cin => temp[0].OUTPUTSELECT
+cin => Csc21100_1bit_add_sub:Csc_Bit_Adder0.cin
+sum3[0] <= Csc21100_1bit_add_sub:Csc_Bit_Adder0.sum
+sum3[1] <= Csc21100_1bit_add_sub:Csc_Bit_Adder1.sum
+sum3[2] <= Csc21100_1bit_add_sub:Csc_Bit_Adder2.sum
+sum3[3] <= Csc21100_1bit_add_sub:Csc_Bit_Adder3.sum
+overflow <= Csc21100_1bit_add_sub:Csc_Bit_Adder3.cout
+
+
+|BlockDisplay|Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder0
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BlockDisplay|Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder1
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BlockDisplay|Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder2
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BlockDisplay|Csc21100_4bit_add_sub:inst2|Csc21100_1bit_add_sub:Csc_Bit_Adder3
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN0
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BlockDisplay|Seg_Display_Signed:inst
+input[0] => Mux0.IN19
+input[0] => Mux1.IN19
+input[0] => Mux2.IN19
+input[0] => Mux3.IN10
+input[0] => Mux4.IN10
+input[0] => Mux5.IN19
+input[0] => Mux6.IN19
+input[1] => Mux0.IN18
+input[1] => Mux1.IN18
+input[1] => Mux2.IN18
+input[1] => Mux3.IN9
+input[1] => Mux4.IN9
+input[1] => Mux5.IN18
+input[1] => Mux6.IN18
+input[2] => Mux0.IN17
+input[2] => Mux1.IN17
+input[2] => Mux2.IN17
+input[2] => Mux3.IN8
+input[2] => Mux4.IN8
+input[2] => Mux5.IN17
+input[2] => Mux6.IN17
+input[3] => Mux0.IN16
+input[3] => Mux1.IN16
+input[3] => Mux2.IN16
+input[3] => Mux5.IN16
+input[3] => Mux6.IN16
+input[3] => output2[6].DATAIN
+input[3] => output2[5].DATAIN
+input[3] => output2[4].DATAIN
+input[3] => output2[3].DATAIN
+input[3] => output2[2].DATAIN
+input[3] => output2[1].DATAIN
+input[3] => output2[0].DATAIN
+output1[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+output1[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+output1[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+output1[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+output1[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+output1[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+output1[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+output2[0] <= input[3].DB_MAX_OUTPUT_PORT_TYPE
+output2[1] <= input[3].DB_MAX_OUTPUT_PORT_TYPE
+output2[2] <= input[3].DB_MAX_OUTPUT_PORT_TYPE
+output2[3] <= input[3].DB_MAX_OUTPUT_PORT_TYPE
+output2[4] <= input[3].DB_MAX_OUTPUT_PORT_TYPE
+output2[5] <= input[3].DB_MAX_OUTPUT_PORT_TYPE
+output2[6] <= input[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,147 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Block_logic_gates
+# storage
+db|Csc21100_Half_adder.(0).cnf
+db|Csc21100_Half_adder.(0).cnf
+# case_insensitive
+# source_file
+block_logic_gates.bdf
+47f4a6a99093d9e77f3f32ebcdde21d0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst|block_logic_gates:inst
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst|block_logic_gates:inst1
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst1|block_logic_gates:inst
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst1|block_logic_gates:inst1
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst2|block_logic_gates:inst
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst2|block_logic_gates:inst1
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst3|block_logic_gates:inst
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst3|block_logic_gates:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Block_logic_2_half_adder
+# storage
+db|Csc21100_Half_adder.(1).cnf
+db|Csc21100_Half_adder.(1).cnf
+# case_insensitive
+# source_file
+block_logic_2_half_adder.bdf
+6bae26e0421798ea25a787c4dc6a77a1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst1
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst2
+block_4_bit_add_sub:inst|block_logic_2_half_adder:inst3
+}
+# macro_sequence
+
+# end
+# entity
+Block2_Full_adder
+# storage
+db|Csc21100_Half_adder.(2).cnf
+db|Csc21100_Half_adder.(2).cnf
+# case_insensitive
+# source_file
+block2_full_adder.bdf
+cbe0eeb1671bb1356e5bd5a31cdf78
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Block_4_bit_full_adder
+# storage
+db|Csc21100_Half_adder.(3).cnf
+db|Csc21100_Half_adder.(3).cnf
+# case_insensitive
+# source_file
+block_4_bit_full_adder.bdf
+9cbde994556398cfbe852b4c253a31
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Block_4_bit_add_sub
+# storage
+db|Csc21100_Half_adder.(4).cnf
+db|Csc21100_Half_adder.(4).cnf
+# case_insensitive
+# source_file
+block_4_bit_add_sub.bdf
+eb4a98ced32bf9d93fd28a27e736838
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+block_4_bit_add_sub:inst
+}
+# macro_sequence
+
+# end
+# entity
+Block_4_bit_add_sub_symbol
+# storage
+db|Csc21100_Half_adder.(5).cnf
+db|Csc21100_Half_adder.(5).cnf
+# case_insensitive
+# source_file
+block_4_bit_add_sub_symbol.bdf
+ec050b09638bf7d44938d463ecd9ebf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

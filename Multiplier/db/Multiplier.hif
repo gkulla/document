@@ -1,0 +1,344 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Multiplier
+# storage
+db|Multiplier.(0).cnf
+db|Multiplier.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+multiplier.vhd
+d319f72037c88f9c4fac3569bdefafa
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+FullAdder
+# storage
+db|Multiplier.(2).cnf
+db|Multiplier.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fulladder.vhd
+29a9b018455307c55208dd5b7835cf4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Block2:inst|FullAdder:inst9
+Block2:inst|FullAdder:inst13
+Block2:inst|FullAdder:inst
+Block2:inst|FullAdder:inst17
+Block2:inst|FullAdder:inst10
+Block2:inst|FullAdder:inst7
+Block2:inst|FullAdder:inst14
+Block2:inst|FullAdder:inst11
+Block2:inst|FullAdder:inst8
+Block2:inst|FullAdder:inst15
+Block2:inst|FullAdder:inst12
+Block2:inst|FullAdder:inst16
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Display
+# storage
+db|Multiplier.(5).cnf
+db|Multiplier.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+display.vhd
+8f525223f38805c616f8527d155d7b1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Csc21100_4bit_add_sub
+# storage
+db|Multiplier.(1).cnf
+db|Multiplier.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csc21100_4bit_add_sub.vhd
+02c8c2e7c82b5548f2c65948feda46
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Csc21100_1bit_add_sub
+# storage
+db|Multiplier.(6).cnf
+db|Multiplier.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+csc21100_4bit_add_sub.vhd
+02c8c2e7c82b5548f2c65948feda46
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Block1
+# storage
+db|Multiplier.(7).cnf
+db|Multiplier.(7).cnf
+# case_insensitive
+# source_file
+block1.bdf
+87ab4fde3c461476d452953fa6c99b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Block2
+# storage
+db|Multiplier.(3).cnf
+db|Multiplier.(3).cnf
+# case_insensitive
+# source_file
+block2.bdf
+f89dcf2ee3272a2742e49d59456a7328
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Block2:inst
+}
+# macro_sequence
+
+# end
+# entity
+Seg_Display_Decoder
+# storage
+db|Multiplier.(8).cnf
+db|Multiplier.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+seg_display_decoder.vhd
+b995e85961e53956bcf5f475e1d8137
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Seg_Display_Decoder:inst1
+Seg_Display_Decoder:inst2
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+busWire
+# storage
+db|Multiplier.(9).cnf
+db|Multiplier.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+buswire.vhd
+4ea555c30153d375c5acf745fbdaf95
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+busWire:inst3
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Seg_Display_Two
+# storage
+db|Multiplier.(10).cnf
+db|Multiplier.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+seg_display_two.vhd
+c65767d259fe97cbf7ebc85d47a5fe17
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Seg_Display_Two:inst4
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Block_Schematic
+# storage
+db|Multiplier.(4).cnf
+db|Multiplier.(4).cnf
+# case_insensitive
+# source_file
+block_schematic.bdf
+35eb9cead6cf26e85ee7d87d25dcb1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
